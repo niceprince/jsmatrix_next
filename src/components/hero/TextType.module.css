@@ -1,0 +1,92 @@
+.gradient {
+	color: #fff;
+	/* background-image: linear-gradient(
+		180deg,
+		#4fe196 0%,
+		#63c2eb 35%,
+		#5bcfc8 70%,
+		#4fe196 100%
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; */
+	/* animation: gradientAnimation 5s ease infinite; */
+}
+
+@keyframes gradientAnimation {
+	0%,
+	100% {
+		background-image: linear-gradient(
+			180deg,
+			#4fe196 0%,
+			#63c2eb 35%,
+			#5bcfc8 70%,
+			#4fe196 100%
+		);
+	}
+	25% {
+		background-image: linear-gradient(
+			180deg,
+			#63c2eb 0%,
+			#5bcfc8 35%,
+			#4fe196 70%,
+			#63c2eb 100%
+		);
+	}
+	50% {
+		background-image: linear-gradient(
+			180deg,
+			#5bcfc8 0%,
+			#4fe196 35%,
+			#63c2eb 70%,
+			#5bcfc8 100%
+		);
+	}
+	75% {
+		background-image: linear-gradient(
+			180deg,
+			#4fe196 0%,
+			#63c2eb 35%,
+			#5bcfc8 70%,
+			#4fe196 100%
+		);
+	}
+}
+
+.example5 {
+  position: relative;
+}
+
+.example5 svg {
+  position: absolute;
+	z-index: 0;
+}
+
+.innerBox {
+		padding: 15px;
+		background: #c11042dc;
+		color: #fff;
+		border-radius: 8px;
+		position: relative;
+		z-index: 2;
+		overflow: hidden;
+		margin: 8px;
+	}
+
+/* .lineAnimate {
+  stroke-dasharray: 260;
+  stroke-width: 10px;
+  fill: transparent;
+  stroke: rgb(255, 255, 255);
+  animation: svgAnimation 2.5s linear infinite;
+}
+
+@keyframes svgAnimation {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 1000;
+  }
+} */
