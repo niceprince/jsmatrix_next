@@ -70,7 +70,7 @@ const DevHeading:React.FC<DevHeadProps> = ({headingBgText, headText, paraText, b
         }, duration * 1000);
       }, delay * 1000);
     }
-  }, []);
+  }, [headingBgText]);
 
   // const mouseMoveEffect = (e) => {
   //   if (!particleContainer.current) return;

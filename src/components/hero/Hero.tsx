@@ -5,7 +5,6 @@ import Bubbles from "./Bubbles";
 
 import { TextType } from "./TextType";
 import HeroWave from "./HeroWave";
-import style from "./TextType.module.css";
 import styleds from './Hero.module.css';
 import ScrollableButton from "../common/ScrollableButton";
 
