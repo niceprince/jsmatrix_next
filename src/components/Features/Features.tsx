@@ -10,7 +10,7 @@ const Features = () => {
           <SectionTitle
             title="Multiple Sevices support"
             paragraph="We offer a comprehensive range of services under one roof, ensuring all your business needs are met efficiently and professionally."
-            center
+            center="center"
           />
 
           <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">

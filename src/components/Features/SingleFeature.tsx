@@ -1,4 +1,13 @@
-const SingleFeature = ({ feature }) => {
+import { JSX } from "react";
+
+type SingleFeature = {
+  id: number;
+  icon: JSX.Element;
+  title: string;
+  paragraph: string;
+}
+
+const SingleFeature = ({ feature } : {feature: SingleFeature}) => {
   const { icon, title, paragraph } = feature;
   
   return (

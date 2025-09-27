@@ -4,14 +4,14 @@ import { useRef, useEffect } from "react";
 import styles from "./Bubbles.module.css";
 
 const generateRandomHexColor = () => {
-  let randomNumber = Math.floor(Math.random() * 16777215);
+  const randomNumber = Math.floor(Math.random() * 16777215);
   let hexColor = randomNumber.toString(16);
   hexColor = hexColor.padStart(6, '0');
   return `#${hexColor.toUpperCase()}`;
 }
 
 const Bubbles = () => {
-  const wrapperRef = useRef(null);
+  const wrapperRef = useRef<HTMLDivElement | null>(null);
   const bubbleLifeTime = 20;
   const noOfBubbles = 100;
   useEffect(() => {
@@ -46,7 +46,8 @@ const Bubbles = () => {
     function init() {
       for (let i = 0; i < noOfBubbles; i++) {
         const bubble = createBubble();
-        wrapper.appendChild(bubble);
+        if(wrapper)
+          wrapper.appendChild(bubble);
       }
     }
 

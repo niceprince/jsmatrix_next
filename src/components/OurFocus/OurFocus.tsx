@@ -1,7 +1,14 @@
 import Image from "next/image";
 import Link from 'next/link';
 
-const OurFocus = ({ ourFocus }) => {
+type OurFocusProps = { 
+  title: string;
+  image: string;
+  paragraph: string;
+  tags: string[];
+}
+
+const OurFocus = ({ ourFocus } : {ourFocus: OurFocusProps }) => {
   const { title, image, paragraph, tags } = ourFocus;
   return (
     <>
