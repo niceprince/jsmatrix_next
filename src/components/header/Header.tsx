@@ -51,8 +51,8 @@ export default function Header() {
         }`}
       >
         <div className="container mx-auto">
-          <div className="relative -mx-4 flex items-center justify-between">
-            <div className="w-60 max-w-full px-4 xl:mr-12">
+          <div className="relative flex items-center justify-between">
+            <div className="w-60 max-w-full xl:mr-12">
               <Link
                 href="/"
                 className={`py-4 header-logo block w-full`}
@@ -61,14 +61,14 @@ export default function Header() {
                   src="/images/jsm-logo.svg"
                   alt="logo"
                   width={150}
-                  height={30}
+                  height={40}
                   className="dark:hidden"
                 />
                 <Image
                   src="/images/jsm-logo.svg"
                   alt="logo"
                   width={150}
-                  height={30}
+                  height={40}
                   className="hidden dark:block"
                 />
               </Link>
@@ -79,7 +79,7 @@ export default function Header() {
                   onClick={navbarToggleHandler}
                   id="navbarToggler"
                   aria-label="Mobile Menu"
-                  className="absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
+                  className="absolute right-0 top-1/2 block translate-y-[-50%] rounded-lg px-1 py-[6px] ring-primary focus:ring-2 lg:hidden"
                 >
                   <span
                     className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${

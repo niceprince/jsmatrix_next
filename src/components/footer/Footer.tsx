@@ -10,7 +10,7 @@ const Footer = () => {
         data-wow-delay=".1s"
       >
         <div className="container mx-auto">
-          <div className="-mx-4 flex flex-wrap">
+          <div className="mx-4 flex flex-wrap">
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-4 inline-block">

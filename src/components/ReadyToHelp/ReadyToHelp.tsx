@@ -15,7 +15,7 @@ const ReadyToHelp = () => {
           mb="80px"
         />
 
-        <div className="-mx-4 flex flex-wrap">
+        <div className="mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div
               className="wow fadeInUp mx-auto max-w-[770px] overflow-hidden rounded-md"

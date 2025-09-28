@@ -131,7 +131,7 @@ const ContactUs = () => {
           Our team will get back to you ASAP via email or call.
         </p>
         <form onSubmit={handleSubmit}>
-          <div className="-mx-4 flex flex-wrap">
+          <div className="mx-4 flex flex-wrap">
             <div className="w-full px-4 md:w-1/2">
               <div className="mb-8">
                 <label

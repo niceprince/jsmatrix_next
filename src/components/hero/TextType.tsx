@@ -24,7 +24,7 @@ export const TextType = () => {
 
 	return (
 		<>
-			<h4 style={{color: 'white'}} className="mb-8 mt-8 text-4xl sm:text-3xl md:text-4xl uppercase text-center font-bold leading-tight text-black dark:text-white sm:leading-tight md:leading-tight">
+			<h4 style={{color: 'white'}} className="mb-8 mt-8 text-3xl sm:text-3xl md:text-4xl uppercase text-center font-bold leading-tight text-black dark:text-white sm:leading-tight md:leading-tight">
 					-: We Provide :-
 			</h4>
 			<div className={`${style.example5} mb-8`}>

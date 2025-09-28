@@ -13,7 +13,7 @@ const OurFocus = ({ ourFocus } : {ourFocus: OurFocusProps }) => {
   return (
     <>
       <div
-        className="wow fadeInUp hover:shadow-two dark:hover:shadow-gray-dark group relative overflow-hidden rounded-md bg-white shadow-one duration-300 dark:bg-dark"
+        className="wow fadeInUp hover:shadow-two dark:hover:shadow-gray-dark group relative overflow-hidden rounded-md bg-white shadow-one duration-300"
         data-wow-delay=".1s"
       >
         <Link
