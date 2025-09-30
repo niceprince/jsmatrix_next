@@ -29,12 +29,12 @@ const OurFocus = ({ ourFocus } : {ourFocus: OurFocusProps }) => {
           <h3 className="text-center">
             <Link
               href="/blog-details"
-              className="mb-4 block text-xl font-bold text-black hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl"
+              className="mb-4 block text-xl font-bold text-black hover:text-primary dark:text-black dark:hover:text-primary sm:text-2xl"
             >
               {title}
             </Link>
           </h3>
-          <p className="text-center mb-6 border-b border-body-color border-opacity-10 pb-6 text-base font-medium text-body-color dark:border-white dark:border-opacity-10">
+          <p className="text-center mb-6 border-b-20 rounded border-red-700 pb-6 text-base font-medium dark:text-black text-body-color dark:border-slate-900">
             {paragraph}
           </p>
         </div>

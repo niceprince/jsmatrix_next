@@ -1,9 +1,9 @@
-import React from "react";
+import React, { ReactElement } from "react";
 
 type TwoPageSectionProps = {
   RightItem: React.FC;
   pageSectionClasses?: string;
-  children?: React.ReactNode;
+  children?: ReactElement;
 }
 
 const PageTwoSectionView: React.FC<TwoPageSectionProps> = ({RightItem, pageSectionClasses = '', children}) => {

@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <footer
-        className="wow fadeInUp dark:bg-gray-dark relative z-10 bg-gray pt-16 md:pt-20 lg:pt-24 bg-indigo-100"
+        className="wow fadeInUp dark:bg-rose-950 relative z-10 bg-gray pt-16 md:pt-20 lg:pt-24 bg-indigo-100"
         data-wow-delay=".1s"
       >
         <div className="container mx-auto">
@@ -122,32 +122,6 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Terms
-                </h2>
-                <ul>
-                  <li>
-                    <Link
-                      href="javascript:void(0)"
-                      className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
-                    >
-                      TOS
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="javascript:void(0)"
-                      className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
-                    >
-                      Privacy Policy
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
@@ -168,6 +142,32 @@ const Footer = () => {
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
                       Contact
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+              <div className="mb-12 lg:mb-16">
+                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+                  Terms
+                </h2>
+                <ul>
+                  <li>
+                    <Link
+                      href="/tos"
+                      className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                    >
+                      TOS
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/privacy-policy"
+                      className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                    >
+                      Privacy Policy
                     </Link>
                   </li>
                 </ul>

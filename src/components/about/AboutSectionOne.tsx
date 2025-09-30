@@ -14,7 +14,7 @@ const AboutSectionOne = () => (<>
         <div className="mx-[-12px] flex flex-wrap">
           <div className="w-full px-3 sm:w-1/2 lg:w-full">
             <div className="mb-9">
-              <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">Welcome to JSS Tech, your trusted partner for creative and digital solutions. We are a full-service company dedicated to helping businesses, brands, and individuals bring their ideas to life with innovation, quality, and reliability.</p>
+              <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">Welcome to JSMatrix, your trusted partner for creative and digital solutions. We are a full-service company dedicated to helping businesses, brands, and individuals bring their ideas to life with innovation, quality, and reliability.</p>
             </div>
             <div className="mb-9">
               <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">With a passion for design, technology, and customer satisfaction, we specialize in:</p>

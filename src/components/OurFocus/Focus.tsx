@@ -13,7 +13,7 @@ const Focus = () => {
         <div className="max-w-[1200px] m-auto">
         <SectionTitle
           title="Service-Focused Area"
-          paragraph="End-to-end services in graphic design, printing, and web development — tailored to brand, trusted partner for design, print, and digital solutions that deliver results."
+          paragraph="End-to-end services in Web Development, Graphic Designs and Printing & Stationaries  — tailored to brand, trusted partner for design, print, and digital solutions that deliver results."
           center="center"
           txtColor="text-white"
         />

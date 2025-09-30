@@ -46,8 +46,8 @@ export default function Header() {
       <header
         className={`header left-0 top-0 z-40 flex w-full items-center ${
           sticky
-            ? "dark:bg-gray-dark dark:shadow-sticky-dark fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
-            : "absolute bg-transparent"
+            ? "dark:bg-slate-700 dark:shadow-sticky-dark fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
+            : `absolute ${(pathname === '/' || '') ? 'bg-transparent' : ' dark:bg-stone-950'}`
         }`}
       >
         <div className="container mx-auto">

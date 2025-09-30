@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Exo } from "next/font/google";
 import Header from "@/components/header/Header";
 import "./globals.css";
 import Footer from "@/components/footer/Footer";
 import ScrollToTop from "@/components/common/ScrollToTop";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const exoSans = Exo({
+  variable: "--font-exo-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
 
 export const metadata: Metadata = {
   title: "JS Matrix | Web Development, Software & Design and Printing Solutions",
@@ -35,7 +35,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${exoSans.variable} antialiased`}
       >
         <ScrollToTop />
         <Header />
