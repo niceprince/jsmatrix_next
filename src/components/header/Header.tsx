@@ -61,14 +61,14 @@ export default function Header() {
                   src="/images/jsm-logo.svg"
                   alt="logo"
                   width={150}
-                  height={40}
+                  height={50}
                   className="dark:hidden"
                 />
                 <Image
-                  src="/images/jsm-logo.svg"
+                  src="/images/jsm-logo-w.svg"
                   alt="logo"
                   width={150}
-                  height={40}
+                  height={50}
                   className="hidden dark:block"
                 />
               </Link>

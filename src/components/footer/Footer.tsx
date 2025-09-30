@@ -17,7 +17,7 @@ const Footer = () => {
                   <Image
                     src="/images/jsm-logo.svg"
                     alt="logo"
-                    width={120}
+                    width={130}
                     height={50}
                   />
                 </Link>
