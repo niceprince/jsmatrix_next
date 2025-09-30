@@ -73,7 +73,7 @@ const PrintingServices = () => {
       <div className="bg-white rounded-xl shadow-lg overflow-hidden transition hover:-translate-y-2 hover:shadow-2xl">
         <Image src="/images/img400.webp" width={400} height={200} alt="Web Development" className="w-full h-48 object-cover" />
         <div className="p-6">
-          <h3 className="text-xl font-bold mb-2 text-gray-900">Web Development</h3>
+          <h3 className="text-xl font-bold mb-2 text-gray-900">Book Printing</h3>
           <p className="text-gray-600 text-sm">
             Build modern, responsive, and scalable websites using technologies like React, NextJS, and Ruby on Rails.
           </p>
@@ -83,7 +83,7 @@ const PrintingServices = () => {
       <div className="bg-white rounded-xl shadow-lg overflow-hidden transition hover:-translate-y-2 hover:shadow-2xl">
         <Image src="/images/img400.webp" width={400} height={200} alt="Graphic Design" className="w-full h-48 object-cover" />
         <div className="p-6">
-          <h3 className="text-xl font-bold mb-2 text-gray-900">Graphic Design</h3>
+          <h3 className="text-xl font-bold mb-2 text-gray-900">Flyer Printing</h3>
           <p className="text-gray-600 text-sm">
             Creative and visually stunning designs for your brand, including logos, banners, social media graphics, and more.
           </p>
@@ -93,7 +93,7 @@ const PrintingServices = () => {
       <div className="bg-white rounded-xl shadow-lg overflow-hidden transition hover:-translate-y-2 hover:shadow-2xl">
         <Image src="/images/img400.webp" width={400} height={200} alt="Printing Services" className="w-full h-48 object-cover" />
         <div className="p-6">
-          <h3 className="text-xl font-bold mb-2 text-gray-900">Printing Services</h3>
+          <h3 className="text-xl font-bold mb-2 text-gray-900">Poster Printing</h3>
           <p className="text-gray-600 text-sm">
             High-quality printing solutions for business cards, brochures, stationery, and more with fast turnaround.
           </p>
@@ -103,7 +103,7 @@ const PrintingServices = () => {
       <div className="bg-white rounded-xl shadow-lg overflow-hidden transition hover:-translate-y-2 hover:shadow-2xl">
         <Image src="/images/img400.webp" width={400} height={200} alt="Digital Marketing" className="w-full h-48 object-cover" />
         <div className="p-6">
-          <h3 className="text-xl font-bold mb-2 text-gray-900">Digital Marketing</h3>
+          <h3 className="text-xl font-bold mb-2 text-gray-900">Banner Printing</h3>
           <p className="text-gray-600 text-sm">
             Grow your online presence with SEO, PPC, social media marketing, and content strategies tailored to your business.
           </p>
@@ -113,7 +113,7 @@ const PrintingServices = () => {
       <div className="bg-white rounded-xl shadow-lg overflow-hidden transition hover:-translate-y-2 hover:shadow-2xl">
         <Image src="/images/img400.webp" width={400} height={200} alt="SEO Services" className="w-full h-48 object-cover" />
         <div className="p-6">
-          <h3 className="text-xl font-bold mb-2 text-gray-900">SEO Services</h3>
+          <h3 className="text-xl font-bold mb-2 text-gray-900">Card Printing</h3>
           <p className="text-gray-600 text-sm">
             Improve your search engine rankings and drive organic traffic with our expert SEO solutions.
           </p>
@@ -123,7 +123,17 @@ const PrintingServices = () => {
       <div className="bg-white rounded-xl shadow-lg overflow-hidden transition hover:-translate-y-2 hover:shadow-2xl">
         <Image src="/images/img400.webp" width={400} height={200} alt="Website Maintenance" className="w-full h-48 object-cover" />
         <div className="p-6">
-          <h3 className="text-xl font-bold mb-2 text-gray-900">Website Maintenance</h3>
+          <h3 className="text-xl font-bold mb-2 text-gray-900">T-Shirt Printing</h3>
+          <p className="text-gray-600 text-sm">
+            Keep your website secure, updated, and fully functional with our reliable maintenance services.
+          </p>
+        </div>
+      </div>
+
+      <div className="bg-white rounded-xl shadow-lg overflow-hidden transition hover:-translate-y-2 hover:shadow-2xl">
+        <Image src="/images/img400.webp" width={400} height={200} alt="Website Maintenance" className="w-full h-48 object-cover" />
+        <div className="p-6">
+          <h3 className="text-xl font-bold mb-2 text-gray-900">ID strip printing</h3>
           <p className="text-gray-600 text-sm">
             Keep your website secure, updated, and fully functional with our reliable maintenance services.
           </p>
