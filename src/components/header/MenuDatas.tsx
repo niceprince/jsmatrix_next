@@ -25,8 +25,8 @@ const MenuData = [
       },
       {
         id: 3.3,
-        title: "SEO Services",
-        path: "/seo-services",
+        title: "SEO Service",
+        path: "/seo-service",
         newTab: false,
       },
       {

@@ -1,4 +1,4 @@
-import SectionTitle from "../common/SectionTitle";
+import SectionTitle from "../../common/SectionTitle";
 import OurFocus from "./OurFocus";
 import focusData from "./FocusData";
 import styles from "./Focus.module.css"

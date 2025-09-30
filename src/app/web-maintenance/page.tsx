@@ -1,6 +1,6 @@
 import Metadata from "@/components/common/Metadata";
 import PageHeadContents from "@/components/common/PageHeadContents";
-import LegalTerm from "@/components/legal/LegalTerm";
+import WebMaintenanceItem from "@/components/developement/WebDev/WebMaintenance";
 
 const WebMaintenance = () => {
 return (
@@ -11,14 +11,8 @@ return (
         description="Learn about JS Matrix, a trusted provider of web development, website design, software solutions, SEO, graphic design, and printing services. Discover our mission to deliver complete digital and print solutions for businesses."
       />
       
-      <PageHeadContents title="Web Maintenance">
-        <LegalTerm />
-      </PageHeadContents>
-
-      <div className="container mx-auto mb-9 w-full wow fadeInUp shadow-three mb-12 rounded-sm bg-amber-600 px-8 py-11">
-        <h2 className='mb-4 text-4xl font-bold text-center !leading-tight text-white '>Why Choose Us?</h2>
-
-      </div>
+      <PageHeadContents title="Web Maintenance" />
+      <WebMaintenanceItem />
     </>
   )
 }

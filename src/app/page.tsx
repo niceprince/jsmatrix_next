@@ -1,7 +1,7 @@
-import Hero from '@/components/hero/Hero'
-import Focus from '@/components/OurFocus/Focus'
-import Features from '@/components/Features/Features'
-import ReadyToHelp from '@/components/ReadyToHelp/ReadyToHelp'
+import Hero from '@/components/home/hero/Hero'
+import Focus from '@/components/home/OurFocus/Focus'
+import Features from '@/components/home/Features/Features'
+import ReadyToHelp from '@/components/home/ReadyToHelp/ReadyToHelp'
 import Metadata from '@/components/common/Metadata'
 
 export default function Home() {

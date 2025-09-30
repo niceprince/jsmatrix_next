@@ -29,7 +29,7 @@ export const TextType = () => {
 			</h4>
 			<div className={`${style.example5} mb-8`}>
 				<div className={style.innerBox}>
-					<h4 className="mb-0text-3xl text-4xl sm:text-5xl md:text-6xl uppercase text-center font-bold leading-tight text-black dark:text-white sm:leading-tight md:leading-tight">
+					<h4 className="mb-0 text-3xl text-3xl sm:text-4xl md:text-5xl uppercase text-center font-bold leading-tight text-black dark:text-white sm:leading-tight md:leading-tight">
 						<span className={`${style.gradient}`} ref={typedRef} />
 					</h4>
 				</div>

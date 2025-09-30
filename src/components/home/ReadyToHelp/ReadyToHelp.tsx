@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SectionTitle from "../common/SectionTitle";
+import SectionTitle from "../../common/SectionTitle";
 
 const paraText = `Our team is committed to delivering exceptional solutions tailored to your unique needs. Whether you require a single service or a complete package, we bring expertise, creativity, and dedication to every project. We believe in building long-term partnerships and ensuring your satisfaction at every stage. Let’s work together to bring your ideas to life and achieve your business goals.`
 

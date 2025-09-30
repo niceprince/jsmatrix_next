@@ -6,7 +6,7 @@ import Bubbles from "./Bubbles";
 import { TextType } from "./TextType";
 import HeroWave from "./HeroWave";
 import styleds from './Hero.module.css';
-import ScrollableButton from "../common/ScrollableButton";
+import ScrollableButton from "../../common/ScrollableButton";
 
 const Hero = () => {
   const [scrollAmount, setScrollAmount] = useState(0);
@@ -24,8 +24,8 @@ const Hero = () => {
         <HeroWave />
         <Bubbles />
         <div className="container mx-auto" style={{position: "relative", zIndex: '2'}}>
-          <div className="mx-4 flex flex-wrap">
-            <div className="w-full px-4">
+          <div className="flex flex-wrap">
+            <div className="w-full sm:px-4">
               <div
                 className="wow fadeInUp mx-auto max-w-[900px] text-left"
                 data-wow-delay=".2s"
