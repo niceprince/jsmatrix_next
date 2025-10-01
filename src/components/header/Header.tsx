@@ -113,7 +113,7 @@ export default function Header() {
                             className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                               usePathName === menuItem.path
                                 ? "text-primary dark:text-white"
-                                : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
+                                : "text-dark hover:text-primary dark:text-gray-700 lg:dark:text-white/70 dark:hover:text-white"
                             }`}
                           >
                             {menuItem.title}
@@ -126,6 +126,7 @@ export default function Header() {
                             >
                               <Link
                                 href={menuItem.topPath || "javascript:void(0)"}
+                                className="dark:text-gray-700 lg:dark:text-white/70"
                               >
                                 {menuItem.title}
                               </Link>
