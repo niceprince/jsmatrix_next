@@ -1,6 +1,9 @@
 import Metadata from '@/components/common/Metadata';
+import PageItemDisplay from '@/components/common/PageItemDisplay';
 import DevHeading from '@/components/developement/DevHeading';
 import Image from 'next/image';
+
+import {printingItemsData} from "@/app-contents/PrintingsPage"
 
 
 const checkIcon = (
@@ -49,112 +52,7 @@ const PrintingServices = () => {
           </div>
         </section>
 
-
-
-
-
-
-
-
-<section className="bg-gray-50 py-16 px-6">
-  <div className="max-w-7xl mx-auto">
-    
-    <div className="text-center mb-12">
-      <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
-        Our Services
-      </h2>
-      <p className="text-gray-600 max-w-2xl mx-auto">
-        Explore our innovative solutions designed to help your business grow. High-quality, professional services tailored for your needs.
-      </p>
-    </div>
-
-    <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      
-      <div className="bg-white rounded-xl shadow-lg overflow-hidden transition hover:-translate-y-2 hover:shadow-2xl">
-        <Image src="/images/img400.webp" width={400} height={200} alt="Web Development" className="w-full h-48 object-cover" />
-        <div className="p-6">
-          <h3 className="text-xl font-bold mb-2 text-gray-900">Book Printing</h3>
-          <p className="text-gray-600 text-sm">
-            Build modern, responsive, and scalable websites using technologies like React, NextJS, and Ruby on Rails.
-          </p>
-        </div>
-      </div>
-
-      <div className="bg-white rounded-xl shadow-lg overflow-hidden transition hover:-translate-y-2 hover:shadow-2xl">
-        <Image src="/images/img400.webp" width={400} height={200} alt="Graphic Design" className="w-full h-48 object-cover" />
-        <div className="p-6">
-          <h3 className="text-xl font-bold mb-2 text-gray-900">Flyer Printing</h3>
-          <p className="text-gray-600 text-sm">
-            Creative and visually stunning designs for your brand, including logos, banners, social media graphics, and more.
-          </p>
-        </div>
-      </div>
-
-      <div className="bg-white rounded-xl shadow-lg overflow-hidden transition hover:-translate-y-2 hover:shadow-2xl">
-        <Image src="/images/img400.webp" width={400} height={200} alt="Printing Services" className="w-full h-48 object-cover" />
-        <div className="p-6">
-          <h3 className="text-xl font-bold mb-2 text-gray-900">Poster Printing</h3>
-          <p className="text-gray-600 text-sm">
-            High-quality printing solutions for business cards, brochures, stationery, and more with fast turnaround.
-          </p>
-        </div>
-      </div>
-
-      <div className="bg-white rounded-xl shadow-lg overflow-hidden transition hover:-translate-y-2 hover:shadow-2xl">
-        <Image src="/images/img400.webp" width={400} height={200} alt="Digital Marketing" className="w-full h-48 object-cover" />
-        <div className="p-6">
-          <h3 className="text-xl font-bold mb-2 text-gray-900">Banner Printing</h3>
-          <p className="text-gray-600 text-sm">
-            Grow your online presence with SEO, PPC, social media marketing, and content strategies tailored to your business.
-          </p>
-        </div>
-      </div>
-
-      <div className="bg-white rounded-xl shadow-lg overflow-hidden transition hover:-translate-y-2 hover:shadow-2xl">
-        <Image src="/images/img400.webp" width={400} height={200} alt="SEO Services" className="w-full h-48 object-cover" />
-        <div className="p-6">
-          <h3 className="text-xl font-bold mb-2 text-gray-900">Card Printing</h3>
-          <p className="text-gray-600 text-sm">
-            Improve your search engine rankings and drive organic traffic with our expert SEO solutions.
-          </p>
-        </div>
-      </div>
-
-      <div className="bg-white rounded-xl shadow-lg overflow-hidden transition hover:-translate-y-2 hover:shadow-2xl">
-        <Image src="/images/img400.webp" width={400} height={200} alt="Website Maintenance" className="w-full h-48 object-cover" />
-        <div className="p-6">
-          <h3 className="text-xl font-bold mb-2 text-gray-900">T-Shirt Printing</h3>
-          <p className="text-gray-600 text-sm">
-            Keep your website secure, updated, and fully functional with our reliable maintenance services.
-          </p>
-        </div>
-      </div>
-
-      <div className="bg-white rounded-xl shadow-lg overflow-hidden transition hover:-translate-y-2 hover:shadow-2xl">
-        <Image src="/images/img400.webp" width={400} height={200} alt="Website Maintenance" className="w-full h-48 object-cover" />
-        <div className="p-6">
-          <h3 className="text-xl font-bold mb-2 text-gray-900">ID strip printing</h3>
-          <p className="text-gray-600 text-sm">
-            Keep your website secure, updated, and fully functional with our reliable maintenance services.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
+        <PageItemDisplay {...printingItemsData} />
 
         <section className="relative bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 py-20 px-6 text-white">
           <div className="max-w-7xl mx-auto text-center">
