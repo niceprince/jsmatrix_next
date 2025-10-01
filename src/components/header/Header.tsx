@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
@@ -16,7 +16,7 @@ export default function Header() {
   // Sticky Navbar
   const [sticky, setSticky] = useState(false);
   const pathname = usePathname();
-  
+
   const handleStickyNavbar = () => {
     if (window.scrollY >= 80) {
       setSticky(true);
@@ -31,7 +31,7 @@ export default function Header() {
 
   // submenu handler
   const [openIndex, setOpenIndex] = useState(-1);
-  const handleSubmenu = (index:number) => {
+  const handleSubmenu = (index: number) => {
     if (openIndex === index) {
       setOpenIndex(-1);
     } else {
@@ -47,16 +47,15 @@ export default function Header() {
         className={`header left-0 top-0 z-40 flex w-full items-center ${
           sticky
             ? "dark:bg-slate-700 dark:shadow-sticky-dark fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
-            : `absolute ${(pathname === '/' || '') ? 'bg-transparent' : ' dark:bg-stone-950'}`
+            : `absolute ${
+                pathname === "/" || "" ? "bg-transparent" : " dark:bg-stone-950"
+              }`
         }`}
       >
         <div className="container mx-auto">
           <div className="relative flex items-center justify-between">
             <div className="w-60 max-w-full xl:mr-12">
-              <Link
-                href="/"
-                className={`py-4 header-logo block w-full`}
-              >
+              <Link href="/" className={`py-4 header-logo block w-full`}>
                 <Image
                   src="/images/jsm-logo.svg"
                   alt="logo"
@@ -125,7 +124,9 @@ export default function Header() {
                               onClick={() => handleSubmenu(index)}
                               className="flex cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:text-primary dark:text-dark dark:group-hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
                             >
-                              <Link href={menuItem.topPath || 'javascript:void(0)'}>
+                              <Link
+                                href={menuItem.topPath || "javascript:void(0)"}
+                              >
                                 {menuItem.title}
                               </Link>
                               <span className="pl-3">
@@ -144,15 +145,16 @@ export default function Header() {
                                 openIndex === index ? "block" : "hidden"
                               }`}
                             >
-                              {menuItem.submenu && menuItem.submenu.map((submenuItem, index) => (
-                                <Link
-                                  href={submenuItem.path}
-                                  key={index}
-                                  className="block rounded py-2.5 text-sm text-dark hover:text-primary dark:text-black dark:hover:text-blue-800 lg:px-3"
-                                >
-                                  {submenuItem.title}
-                                </Link>
-                              ))}
+                              {menuItem.submenu &&
+                                menuItem.submenu.map((submenuItem, index) => (
+                                  <Link
+                                    href={submenuItem.path}
+                                    key={index}
+                                    className="block rounded py-2.5 text-sm text-dark hover:text-primary dark:text-black dark:hover:text-blue-800 lg:px-3"
+                                  >
+                                    {submenuItem.title}
+                                  </Link>
+                                ))}
                             </div>
                           </>
                         )}
@@ -197,4 +199,4 @@ export default function Header() {
       </header>
     </>
   );
-};
+}

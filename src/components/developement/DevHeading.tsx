@@ -1,16 +1,21 @@
-'use client';
+"use client";
 
-import React, { useRef, useEffect } from 'react';
-import styles from './DevHeading.module.css';
-import ScrollableButton from '../common/ScrollableButton';
+import React, { useRef, useEffect } from "react";
+import styles from "./DevHeading.module.css";
+import ScrollableButton from "../common/ScrollableButton";
 
 type DevHeadProps = {
-  headingBgText:string[];
-  headText:string;
-  paraText:string;
-  bgImage?:string
-}
-const DevHeading:React.FC<DevHeadProps> = ({headingBgText, headText, paraText, bgImage}) => {
+  headingBgText: string[];
+  headText: string;
+  paraText: string;
+  bgImage?: string;
+};
+const DevHeading: React.FC<DevHeadProps> = ({
+  headingBgText,
+  headText,
+  paraText,
+  bgImage,
+}) => {
   const particleContainer = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -18,14 +23,14 @@ const DevHeading:React.FC<DevHeadProps> = ({headingBgText, headText, paraText, b
     const particlesContainer = particleContainer.current;
     const particleCount = 25;
     const bgText = headingBgText;
-    
+
     for (let i = 0; i < particleCount; i++) {
       const rNum = Math.floor(Math.random() * bgText.length);
       createParticle(bgText[rNum]);
     }
 
-    function createParticle(devText:string) {
-      const particle: HTMLDivElement = document.createElement('div');
+    function createParticle(devText: string) {
+      const particle: HTMLDivElement = document.createElement("div");
       particle.innerHTML = devText;
       particle.className = styles.particle;
 
@@ -44,7 +49,7 @@ const DevHeading:React.FC<DevHeadProps> = ({headingBgText, headText, paraText, b
 
       particle.style.left = `${posX}%`;
       particle.style.top = `${posY}%`;
-      particle.style.opacity = '0';
+      particle.style.opacity = "0";
 
       return { x: posX, y: posY };
     }
@@ -116,19 +121,30 @@ const DevHeading:React.FC<DevHeadProps> = ({headingBgText, headText, paraText, b
   // onMouseMove={mouseMoveEffect}
   return (
     <div className={styles.devHead}>
-      <div className={styles.gradientBackground} style={{backgroundImage: bgImage }}>
+      <div
+        className={styles.gradientBackground}
+        style={{ backgroundImage: bgImage }}
+      >
         <div className={`${styles.gradientSphere} ${styles.sphere1}`}></div>
         <div className={`${styles.gradientSphere} ${styles.sphere2}`}></div>
         <div className={`${styles.gradientSphere} ${styles.sphere3}`}></div>
         <div className={styles.glow}></div>
         <div className={styles.gridOverlay}></div>
-        <div className={styles.noiseOverlay} style={{backgroundImage: bgImage }}></div>
-        <div className={styles.particlesContainer} ref={particleContainer}></div>
+        <div
+          className={styles.noiseOverlay}
+          style={{ backgroundImage: bgImage }}
+        ></div>
+        <div
+          className={styles.particlesContainer}
+          ref={particleContainer}
+        ></div>
       </div>
-      <div className={styles.contentContainer}>
-        <h1 className='text-4xl uppercase'>{headText}</h1>
-        <p>{paraText}</p>
-        <ScrollableButton scrollAmount={350} />
+      <div className={`${styles.contentContainer}`}>
+        <div className="py-2 sm:py-4 md:py-4 lg:py-12">
+          <h1 className="text-4xl uppercase">{headText}</h1>
+          <p>{paraText}</p>
+          <ScrollableButton scrollAmount={350} />
+        </div>
       </div>
     </div>
   );

@@ -1,12 +1,26 @@
-import styles from '../developement/DevHeading.module.css';
+"use client";
+import styles from "../developement/DevHeading.module.css";
 
-const ScrollableButton = ({scrollAmount = 350}) => {
+interface ScrollableButtonProps {
+  scrollAmount: number;
+  buttonText?: string;
+  buttonClasses?: string;
+}
+
+const ScrollableButton: React.FC<ScrollableButtonProps> = ({
+  scrollAmount = 350,
+  buttonText = "Explore More",
+  buttonClasses = styles.btn,
+}) => {
   const handleScroll = () => {
-    console.log('I am just scrolling on the page...')
-    window.scrollTo({ top: scrollAmount, behavior: 'smooth' });
-  }
+    window.scrollTo({ top: scrollAmount, behavior: "smooth" });
+  };
 
-  return <button className={styles.btn} onClick={handleScroll}>Explore More</button>
+  return (
+    <button className={buttonClasses} onClick={handleScroll}>
+      {buttonText}
+    </button>
+  );
 };
 
 export default ScrollableButton;
