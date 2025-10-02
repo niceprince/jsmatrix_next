@@ -2,7 +2,7 @@ import React from "react";
 
 type ItemsProps = {
   id: number;
-  keyword: string;
+  keyword: string | React.ReactNode;
   description: string;
 };
 

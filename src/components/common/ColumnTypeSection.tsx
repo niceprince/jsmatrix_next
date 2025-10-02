@@ -1,5 +1,5 @@
 interface ColumnData {
-  icon?: string;
+  icon?: string | React.ReactNode;
   title: string;
   description: string;
 }
@@ -28,7 +28,7 @@ export default function ColumnTypeSection({
               key={index + "110"}
               className="bg-white text-gray-900 rounded-2xl shadow-lg hover:shadow-2xl p-8 transition transform hover:-translate-y-2"
             >
-              <h3 className="text-xl font-bold mb-2">
+              <h3 className="text-xl font-bold mb-2 text-center">
                 {item.icon && item.icon} {item.title}
               </h3>
               <p className="text-gray-600 text-sm">{item.description}</p>

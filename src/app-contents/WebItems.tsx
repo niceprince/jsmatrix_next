@@ -63,6 +63,62 @@ export const ExpertiseFieldsData = {
       description:
         "A robust framework for building complex, scalable, single-page applications.",
     },
+    {
+      icon: (
+        <svg
+          style={{ display: "inline-block" }}
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 100 100"
+        >
+          <rect width="100" height="100" rx="20" ry="20" fill="#512BD4" />
+          <text
+            x="50%"
+            y="55%"
+            fontSize="36"
+            fontFamily="Arial, sans-serif"
+            fill="white"
+            fontWeight="bold"
+            textAnchor="middle"
+            dominantBaseline="middle"
+          >
+            .NET
+          </text>
+        </svg>
+      ),
+      title: ".NET",
+      description: `Leverage the power of Microsoft's .NET framework for building scalable,
+    secure, and high-performance web applications. With cross-platform support
+    and seamless integration.`,
+    },
+    {
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 100 100"
+          style={{ display: "inline-block" }}
+        >
+          <rect width="100" height="100" rx="20" ry="20" fill="#777BB3" />
+          <text
+            x="50%"
+            y="55%"
+            fontSize="32"
+            fontFamily="Arial, sans-serif"
+            fill="white"
+            fontWeight="bold"
+            textAnchor="middle"
+            dominantBaseline="middle"
+          >
+            PHP
+          </text>
+        </svg>
+      ),
+      title: "🐘 PHP",
+      description: `Power your web applications with PHP - a reliable, fast, and open-source scripting language used by millions of websites worldwide. From custom CMS solutions to robust backend systems, PHP offers flexibility, scalability, and strong community support.`,
+    },
   ],
 };
 
@@ -101,6 +157,14 @@ export const WebDevItems = {
                 can grow with your business needs.`,
     },
     {
+      id: 10020,
+      keyword: "🟢 Node.js",
+      description: `Node.js allows developers to use JavaScript on the server, enabling full-stack development with 
+      a single language. It excels in handling concurrent connections, real-time applications, 
+      and APIs thanks to its non-blocking, asynchronous architecture. With a rich ecosystem of 
+      packages via npm and seamless integration with databases, Node.js is ideal for building modern web apps.`,
+    },
+    {
       id: 10013,
       keyword: "✨ jQuery",
       description: `A lightweight JavaScript library simplifying DOM manipulations
@@ -113,31 +177,93 @@ export const WebDevItems = {
       id: 10014,
       keyword: " 🅰️ Angular",
       description: `A robust front-end framework for building enterprise-grade
-                single-page applications.`,
+                single-page applications. Angular empowers developers to create highly dynamic, modular, and scalable web apps. With built-in tools for routing, state management, and forms, it’s perfect for complex projects that require maintainable and reusable code. Its powerful CLI and strong TypeScript support make development faster and more efficient.`,
     },
     {
       id: 10015,
       keyword: "📝 WordPress",
       description: `A leading CMS for building blogs, websites, and eCommerce
-                platforms.`,
+                platforms. WordPress is an extremely flexible platform that allows businesses to launch websites quickly with custom themes, plugins, and integrations. Whether it’s a simple blog, corporate website, or full-featured online store, WordPress provides ease of use, SEO-friendly structures, and a huge community that keeps it constantly evolving.`,
     },
     {
       id: 10016,
       keyword: "🌐 HTML",
-      description: `The standard markup language for structuring web content.`,
+      description: `The standard markup language for structuring web content. HTML is the backbone of every website, providing the semantic structure for web pages. It ensures that content is accessible, organized, and readable by browsers and search engines alike. Combined with modern practices like semantic tags, accessibility standards, and responsive design principles, HTML lays the foundation for great user experiences.`,
     },
     {
       id: 10017,
       keyword: "🎨 CSS",
-      description: `Styling and layout that bring websites to life with responsive designs.`,
+      description: `Styling and layout that bring websites to life with responsive designs. CSS allows designers and developers to create visually appealing, responsive, and interactive web pages. From animations and transitions to flexbox, grid layouts, and media queries, CSS ensures that websites look great on all devices. Modern CSS techniques also improve performance and maintainability, giving developers full creative control.`,
     },
     {
       id: 10018,
-      keyword: "Git & Version Control",
-      description: `We manage all projects with Git to ensure smooth collaboration,
-                secure versioning, and safe deployments. This structured
-                approach keeps development organized, transparent, and
-                error-free.`,
+      keyword: (
+        <>
+          <svg
+            style={{ display: "inline-block" }}
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 100 100"
+          >
+            <rect width="100" height="100" rx="20" ry="20" fill="#512BD4" />
+            <text
+              x="50%"
+              y="55%"
+              fontSize="36"
+              fontFamily="Arial, sans-serif"
+              fill="white"
+              fontWeight="bold"
+              textAnchor="middle"
+              dominantBaseline="middle"
+            >
+              .NET
+            </text>
+          </svg>{" "}
+          .NET
+        </>
+      ),
+      description: `Leverage the power of Microsoft's .NET framework for building scalable,
+    secure, and high-performance web applications. With cross-platform support
+    and seamless integration.`,
     },
+    {
+      id: 10019,
+      keyword: (
+        <>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 100 100"
+            style={{ display: "inline-block" }}
+          >
+            <rect width="100" height="100" rx="20" ry="20" fill="#777BB3" />
+            <text
+              x="50%"
+              y="55%"
+              fontSize="32"
+              fontFamily="Arial, sans-serif"
+              fill="white"
+              fontWeight="bold"
+              textAnchor="middle"
+              dominantBaseline="middle"
+            >
+              PHP
+            </text>
+          </svg>{" "}
+          🐘 PHP
+        </>
+      ),
+      description: `Power your web applications with PHP - a reliable, fast, and open-source scripting language used by millions of websites worldwide. From custom CMS solutions to robust backend systems, PHP offers flexibility, scalability, and strong community support.`,
+    },
+    // {
+    //   id: 10020,
+    //   keyword: "Git & Version Control",
+    //   description: `We manage all projects with Git to ensure smooth collaboration,
+    //             secure versioning, and safe deployments. This structured
+    //             approach keeps development organized, transparent, and
+    //             error-free.`,
+    // },
   ],
 };
