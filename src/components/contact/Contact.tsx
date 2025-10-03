@@ -140,13 +140,13 @@ const ContactUs = () => {
         width="auto"
       />
       <div
-        className="wow fadeInUp shadow-three dark:bg-gray-dark mb-5 rounded-sm bg-white px-4 py-8 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
+        className="wow fadeInUp shadow-lg dark:bg-gray-800 mb-5 rounded-md bg-gray-100 px-4 py-8 sm:p-14 lg:mb-5 lg:px-8 xl:p-14"
         data-wow-delay=".15s"
       >
-        <h2 className="mb-3 text-2xl font-bold text-black dark:text-black sm:text-3xl lg:text-2xl xl:text-3xl">
+        <h2 className="mb-3 text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
           Need contact? Please raise the query!
         </h2>
-        <p className="mb-4 text-base font-medium text-body-color dark:text-black">
+        <p className="mb-6 text-base font-medium text-gray-700 dark:text-gray-300">
           For immediate assistance, <br />
           Please call +91 8368115720, or <br />
           Email at info@jsmatrix.in <br />
@@ -154,13 +154,15 @@ const ContactUs = () => {
           <br />
           Our team will get back to you ASAP via email or call.
         </p>
+
         <form onSubmit={handleSubmit}>
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap -mx-2">
+            {/* Name */}
             <div className="w-full px-2 md:w-1/2">
               <div className="mb-4">
                 <label
                   htmlFor="name"
-                  className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                  className="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-200"
                 >
                   Name
                 </label>
@@ -170,16 +172,20 @@ const ContactUs = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
+                  className="w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-900 outline-none focus:border-indigo-500 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 dark:focus:border-indigo-400"
                 />
-                {errors.name && <p style={{ color: "red" }}>{errors.name}</p>}
+                {errors.name && (
+                  <p className="text-red-500 text-sm">{errors.name}</p>
+                )}
               </div>
             </div>
+
+            {/* Email */}
             <div className="w-full px-2 md:w-1/2">
               <div className="mb-4">
                 <label
                   htmlFor="email"
-                  className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                  className="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-200"
                 >
                   Email
                 </label>
@@ -189,17 +195,20 @@ const ContactUs = () => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Enter your email"
-                  className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
+                  className="w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-900 outline-none focus:border-indigo-500 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 dark:focus:border-indigo-400"
                 />
-                {errors.email && <p style={{ color: "red" }}>{errors.email}</p>}
+                {errors.email && (
+                  <p className="text-red-500 text-sm">{errors.email}</p>
+                )}
               </div>
             </div>
 
+            {/* Phone */}
             <div className="w-full px-2 md:w-1/2">
               <div className="mb-4">
                 <label
-                  htmlFor="name"
-                  className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                  htmlFor="phone_number"
+                  className="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-200"
                 >
                   Phone number
                 </label>
@@ -209,18 +218,20 @@ const ContactUs = () => {
                   value={formData.phone_number}
                   onChange={handleChange}
                   placeholder="Enter your phone number"
-                  className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
+                  className="w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-900 outline-none focus:border-indigo-500 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 dark:focus:border-indigo-400"
                 />
                 {errors.phone_number && (
-                  <p style={{ color: "red" }}>{errors.phone_number}</p>
+                  <p className="text-red-500 text-sm">{errors.phone_number}</p>
                 )}
               </div>
             </div>
+
+            {/* Address */}
             <div className="w-full px-2 md:w-1/2">
               <div className="mb-4">
                 <label
-                  htmlFor="email"
-                  className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                  htmlFor="address"
+                  className="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-200"
                 >
                   Address
                 </label>
@@ -230,19 +241,20 @@ const ContactUs = () => {
                   value={formData.address}
                   onChange={handleChange}
                   placeholder="Enter your address"
-                  className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
+                  className="w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-900 outline-none focus:border-indigo-500 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 dark:focus:border-indigo-400"
                 />
                 {errors.address && (
-                  <p style={{ color: "red" }}>{errors.address}</p>
+                  <p className="text-red-500 text-sm">{errors.address}</p>
                 )}
               </div>
             </div>
 
+            {/* Message */}
             <div className="w-full px-2">
               <div className="mb-4">
                 <label
                   htmlFor="message"
-                  className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                  className="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-200"
                 >
                   Message
                 </label>
@@ -252,28 +264,28 @@ const ContactUs = () => {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Enter your Message"
-                  className="border-stroke dark:text-body-color-dark dark:shadow-two w-full resize-none rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
+                  className="w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-900 outline-none focus:border-indigo-500 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 dark:focus:border-indigo-400 resize-none"
                 ></textarea>
                 {errors.message && (
-                  <p style={{ color: "red" }}>{errors.message}</p>
+                  <p className="text-red-500 text-sm">{errors.message}</p>
                 )}
               </div>
             </div>
+
+            {/* Submit */}
             <div className="w-full px-2">
               {mailSending ? (
                 <SendingMail />
               ) : (
                 <button
                   type="submit"
-                  className="inline-flex items-center rounded-md bg-indigo-500 px-4 py-2 text-sm leading-6 font-semibold text-white transition duration-150 ease-in-out hover:bg-indigo-400"
+                  className="inline-flex items-center justify-center w-full rounded-md bg-indigo-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-indigo-400"
                 >
                   Submit
                 </button>
               )}
               {responseMsg && (
-                <span className="pl-4" style={{ color: "green" }}>
-                  {responseMsg}
-                </span>
+                <p className="mt-2 text-green-500">{responseMsg}</p>
               )}
             </div>
           </div>

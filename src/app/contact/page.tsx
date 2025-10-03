@@ -7,9 +7,9 @@ const Contact = () => {
   return (
     <>
       <Metadata
-        title="Contact Us | JSMatrix - Get in Touch for Web & Design and Printing Solutions"
-        keywords="Contact JS Matrix, Web development contact, Website design support, Software solutions, SEO services, Printing services, Graphic design contact"
-        description="Contact JS Matrix for web development, website design, software solutions, SEO, printing services, and graphic design. Reach out today to discuss your project needs."
+        title="Contact JSMatrix - Get in Touch for Digital & Creative Services"
+        keywords="Contact JSmatrix, Web development contact, Website design support, Software solutions, SEO services, Printing services, Graphic design contact, contact us, js matrix contact, digital solutions inquiry, web development contact, seo services contact, graphic design contact, printing services contact, office stationery inquiry, reach us, customer support, business inquiry, get in touch, email js matrix, call js matrix"
+        description="Reach out to JSMatrix for all your digital and creative service needs. Whether you’re interested in web development, SEO, graphic design, printing, or office stationery, our team is ready to assist you and provide tailored solutions for your business."
       />
       <PageTwoSectionView
         pageHeading="Contact Us"

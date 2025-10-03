@@ -3,18 +3,18 @@ import PageHeadContents from "@/components/common/PageHeadContents";
 import WebDevelopmentItems from "@/components/developement/WebDev/WebDevelopment";
 
 const WebDevelopment = () => {
-return (
+  return (
     <>
-      <Metadata 
-        title="Terms of Service | JS Matrix - Web Development, Design & Printing Solutions"
-        keywords="About JS Matrix, Web development company, Website design agency, Software solutions provider, SEO services, Graphic design, Printing services"
-        description="Learn about JS Matrix, a trusted provider of web development, website design, software solutions, SEO, graphic design, and printing services. Discover our mission to deliver complete digital and print solutions for businesses."
+      <Metadata
+        title="Web Development Services"
+        keywords="Javascript, Typescript, React, ReactJS, React.js, Next, NextJS, NodeJS, Ruby on Rails, PHP, WordPress, HTML, CSS, .net, dot net, Postgresql, postgres, software, Development, Gem, Ajax, API, Rails, Ruby, jQuery "
+        description="We combine modern web technologies and best practices to build robust, scalable, and future-ready software solutions."
       />
-      
+
       <PageHeadContents title="Web Development" />
       <WebDevelopmentItems />
     </>
-  )
-}
+  );
+};
 
 export default WebDevelopment;

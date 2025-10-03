@@ -15,9 +15,9 @@ import WhyChooseSection from "@/components/common/WhyChooseSection";
 const GraphicDesigns = () => (
   <>
     <Metadata
-      title={`JS Matrix | ${headText}`}
-      keywords={languages.join(", ")}
-      description={paraText}
+      title={`Creative Graphic Design Services – Branding & Visual Solutions | JSMatrix.in | ${headText}`}
+      keywords="graphic design, branding design, logo design, business cards, brochures, visual identity, digital graphics, creative designs, marketing materials, poster design, flyer design, corporate branding, visual content, design services, custom illustrations"
+      description="Bring your brand to life with JSMatrix's professional graphic design services. We create stunning visuals, logos, brochures, and marketing materials that effectively communicate your brand's identity and make your business stand out online and offline."
     />
     <section className="pt-18 pt-[4rem] md:pt-[70px]">
       <DevHeading

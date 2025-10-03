@@ -13,7 +13,7 @@ const AboutSectionOne = () => (
             {/* Intro */}
             <div className="mb-9">
               <p className="text-base font-medium leading-relaxed text-gray-700 dark:text-gray-300 sm:text-lg sm:leading-relaxed">
-                Welcome to <strong>JSMatrix</strong>, your trusted partner for
+                Welcome to <strong>JSmatrix</strong>, your trusted partner for
                 creative and digital solutions. We are a full-service company
                 dedicated to helping businesses, brands, and individuals bring
                 their ideas to life with innovation, quality, and reliability.
@@ -56,7 +56,7 @@ const AboutSectionOne = () => (
             {/* About */}
             <div className="mb-9 space-y-4">
               <p className="text-base font-medium leading-relaxed text-gray-700 dark:text-gray-300 sm:text-lg sm:leading-relaxed">
-                At <strong>JSMatrix</strong>, we believe every project is
+                At <strong>JSmatrix</strong>, we believe every project is
                 unique. That’s why we combine creativity, strategy, and
                 technology to deliver solutions that align with your goals. Our
                 team of skilled designers, developers, and professionals works

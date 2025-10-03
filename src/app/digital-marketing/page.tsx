@@ -3,18 +3,18 @@ import PageHeadContents from "@/components/common/PageHeadContents";
 import DigitalMarketingContent from "@/components/developement/WebDev/DigitalMarketingContent";
 
 const DigitalMarketing = () => {
-return (
+  return (
     <>
-      <Metadata 
-        title="Terms of Service | JS Matrix - Web Development, Design & Printing Solutions"
-        keywords="About JS Matrix, Web development company, Website design agency, Software solutions provider, SEO services, Graphic design, Printing services"
-        description="Learn about JS Matrix, a trusted provider of web development, website design, software solutions, SEO, graphic design, and printing services. Discover our mission to deliver complete digital and print solutions for businesses."
+      <Metadata
+        title="Digital Marketing Services – Grow Your Brand Online | JSMatrix.in"
+        keywords="digital marketing, online marketing, social media marketing, ppc advertising, email marketing, content marketing, marketing strategy, seo and digital marketing, brand promotion, online campaigns, lead generation, marketing automation, facebook ads, google ads, social media management"
+        description="Expand your brand’s reach and grow your business online with JSMatrix’s professional digital marketing services. From social media campaigns and PPC advertising to content creation and email marketing, we deliver results-driven strategies to increase engagement, leads, and sales."
       />
-      
+
       <PageHeadContents title="Digital Marketing" />
       <DigitalMarketingContent />
     </>
-  )
-}
+  );
+};
 
 export default DigitalMarketing;

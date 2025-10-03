@@ -5,7 +5,7 @@ const Tos = () => {
   return (
     <>
       <Metadata
-        title="Terms of Service | JS Matrix - Web Development, Design & Printing Solutions"
+        title="Terms of Service - JSMatrix.in Web, Graphics, Printing & Stationary"
         keywords="About JS Matrix, Web development company, Website design agency, Software solutions provider, SEO services, Graphic design, Printing services"
         description="Learn about JS Matrix, a trusted provider of web development, website design, software solutions, SEO, graphic design, and printing services. Discover our mission to deliver complete digital and print solutions for businesses."
       />

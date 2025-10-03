@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { ChildrenFC } from "@/utils/types";
 
 type MetadataProps = {
@@ -22,7 +21,7 @@ const Metadata: React.FC<MetadataProps> = ({
       <meta property="og:url" content="https://jsmatrix.in/" />
       <meta
         property="og:title"
-        content={title || "JSMatrix | Complete Web & Digital Solutions"}
+        content={title || "JSmatrix | Complete Web & Digital Solutions"}
       />
       <meta
         property="og:description"
@@ -40,7 +39,7 @@ const Metadata: React.FC<MetadataProps> = ({
       <meta name="twitter:url" content="https://jsmatrix.in/" />
       <meta
         name="twitter:title"
-        content={title || "JSMatrix | Complete Web & Digital Solutions"}
+        content={title || "JSmatrix | Complete Web & Digital Solutions"}
       />
       <meta
         name="twitter:description"
