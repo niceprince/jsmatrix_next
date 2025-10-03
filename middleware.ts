@@ -52,6 +52,13 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import crypto from "crypto";
 
+// Edge-compatible nonce generator
+function generateNonce(length = 16) {
+  const array = new Uint8Array(length);
+  crypto.getRandomValues(array);
+  return Array.from(array, (b) => b.toString(16).padStart(2, "0")).join("");
+}
+
 // Apply middleware to all paths except API, _next/static, _next/image, favicon.ico
 export const config = {
   matcher: ["/((?!api|_next/static|_next/image|favicon.ico).*)"],
@@ -59,7 +66,7 @@ export const config = {
 
 export function middleware(req: NextRequest) {
   // Generate a nonce for inline scripts/styles
-  const nonce = crypto.randomUUID();
+  const nonce = generateNonce();
 
   // Content Security Policy
   const cspHeader = `
