@@ -6,8 +6,8 @@ const Tos = () => {
     <>
       <Metadata
         title="Terms of Service - JSMatrix.in Web, Graphics, Printing & Stationary"
-        keywords="About JS Matrix, Web development company, Website design agency, Software solutions provider, SEO services, Graphic design, Printing services"
-        description="Learn about JS Matrix, a trusted provider of web development, website design, software solutions, SEO, graphic design, and printing services. Discover our mission to deliver complete digital and print solutions for businesses."
+        keywords="terms of service, js matrix terms, website terms, service agreement, user agreement, policies, legal terms, website usage, service conditions, terms and conditions"
+        description="Read the Terms of Service for JSMatrix.in. This page outlines the rules, guidelines, and legal conditions governing the use of our website and services, ensuring a safe and transparent experience for all users."
       />
       <section className="pt-16 md:pt-20 lg:pt-18">
         <div className="bg-teal-700 mb-8 drop-shadow">
