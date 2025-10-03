@@ -60,7 +60,7 @@ function generateNonce(length = 16) {
 
 // Apply middleware to all paths except API, _next/static, _next/image, favicon.ico
 export const config = {
-  matcher: ["/((?!api|_next/static|_next/image|favicon.ico).*)"],
+  matcher: ["/((?!_next/static|_next/image|api|favicon.ico).*)"],
 };
 
 export function middleware(req: NextRequest) {
@@ -88,8 +88,6 @@ export function middleware(req: NextRequest) {
   const response = NextResponse.next({
     request: { headers: requestHeaders },
   });
-
-  response.headers.set("Cache-Control", "public, max-age=31536000, immutable");
 
   // Add CSP header
   response.headers.set("Content-Security-Policy", cspHeader);
