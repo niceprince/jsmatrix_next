@@ -14,7 +14,7 @@ export const headText = "Graphic Designs";
 export const paraText = `We craft visually engaging designs that communicate your brand’s message with clarity and creativity. From logos to marketing materials, our designs leave a lasting impression.`;
 
 export const graphicsSubHeading = {
-  heading: "Innovating the Future of Graphics",
+  heading: "Transforming Concepts Into Visuals",
   subHeading: "Creative Visuals that Speak for Organization Brand",
   description:
     "Great design is more than just visuals—it’s the art of communication. Our graphic design services blend creativity with strategy to deliver designs that are modern, engaging, and aligned with your brand’s identity. Whether digital or print, we design to inspire, impress, and connect with your audience.",
