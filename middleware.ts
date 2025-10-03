@@ -50,12 +50,11 @@
 // middleware.ts (at project root)
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import crypto from "crypto";
 
 // Edge-compatible nonce generator
 function generateNonce(length = 16) {
   const array = new Uint8Array(length);
-  crypto.getRandomValues(array);
+  crypto.getRandomValues(array); // Web Crypto API
   return Array.from(array, (b) => b.toString(16).padStart(2, "0")).join("");
 }
 
