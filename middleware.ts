@@ -89,6 +89,8 @@ export function middleware(req: NextRequest) {
     request: { headers: requestHeaders },
   });
 
+  response.headers.set("Cache-Control", "public, max-age=31536000, immutable");
+
   // Add CSP header
   response.headers.set("Content-Security-Policy", cspHeader);
 
