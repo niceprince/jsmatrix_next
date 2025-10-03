@@ -3,7 +3,6 @@ import SectionTitle from "../common/SectionTitle";
 const AboutSectionOne = () => (
   <>
     <SectionTitle
-      title="About Us"
       paragraph="Our main focus is on empowering businesses to safeguard their most critical and vulnerable applications. We achieve this through knowledge sharing, innovative solutions, and a collaborative approach that ensures organizations stay protected in an ever-evolving digital landscape."
       mb="44px"
     />

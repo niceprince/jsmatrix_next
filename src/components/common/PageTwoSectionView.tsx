@@ -1,12 +1,14 @@
 import React, { ReactElement } from "react";
 
 type TwoPageSectionProps = {
+  pageHeading?: string;
   RightItem: React.FC;
   pageSectionClasses?: string;
   children?: ReactElement;
 };
 
 const PageTwoSectionView: React.FC<TwoPageSectionProps> = ({
+  pageHeading,
   RightItem,
   pageSectionClasses = "",
   children,
@@ -14,9 +16,18 @@ const PageTwoSectionView: React.FC<TwoPageSectionProps> = ({
   const RightSection = RightItem;
 
   return (
-    <section className="pt-16 md:pt-20 lg:pt-28">
+    <section className="pt-16 md:pt-20 lg:pt-18">
+      {pageHeading && (
+        <div className="bg-teal-700 drop-shadow">
+          <div className="container mx-auto py-8">
+            <h1 className="text-2xl sm:text-3xl md:text-3xl font-bold text-white ">
+              {pageHeading}
+            </h1>
+          </div>
+        </div>
+      )}
       <div className="container mx-auto">
-        <div className="border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
+        <div className="border-body-color/[.15] pb-6 dark:border-white/[.15] md:pb-8 lg:pb-14">
           <div className="flex flex-wrap">
             <div
               className={`w-full px-4 pt-8 lg:w-1/2 ${
