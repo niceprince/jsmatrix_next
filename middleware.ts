@@ -71,7 +71,7 @@ export function middleware(req: NextRequest) {
   const cspHeader = `
     default-src 'self';
     script-src 'self' 'nonce-${nonce}' https://www.googletagmanager.com https://www.google-analytics.com;
-    style-src 'self' 'nonce-${nonce}' https://fonts.googleapis.com;
+    style-src 'self' 'unsafe-inline' data: https://www.jsmatrix.in https://fonts.googleapis.com;
     img-src 'self' data: https://www.jsmatrix.in https://www.google-analytics.com;
     font-src 'self' https://fonts.gstatic.com;
     connect-src 'self' https://www.google-analytics.com;
