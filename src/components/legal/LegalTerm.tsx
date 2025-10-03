@@ -1,13 +1,13 @@
 const LegalTerm = () => (
   <div className="w-full px-6 lg:max-w-[1000px] mx-auto">
     <div className="mb-12">
-      <p className="text-base font-medium leading-relaxed text-gray-700 sm:text-lg">
+      <p className="text-base font-medium leading-relaxed text-gray-700 dark:text-gray-300 sm:text-lg">
         Welcome to <strong>JS Matrix</strong> (“Company”, “we”, “our”, or “us”).
         By accessing or using our website{" "}
         <a
           href="https://www.jsmatrix.in"
           target="_blank"
-          className="text-blue-600 hover:underline"
+          className="text-blue-600 dark:text-blue-400 hover:underline"
         >
           https://www.jsmatrix.in
         </a>{" "}
@@ -21,13 +21,13 @@ const LegalTerm = () => (
     <div className="space-y-12">
       {/* Section Template */}
       <div>
-        <h2 className="mb-4 text-xl font-bold text-gray-900">
+        <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-gray-100">
           Services Provided
         </h2>
-        <h3 className="mb-4 text-lg font-semibold text-gray-800">
+        <h3 className="mb-4 text-lg font-semibold text-gray-800 dark:text-gray-200">
           JS Matrix offers:
         </h3>
-        <ul className="list-disc list-inside space-y-2 text-gray-700">
+        <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
           <li>
             <strong>Web Development & Maintenance</strong> – Custom websites,
             updates, and support.
@@ -48,14 +48,16 @@ const LegalTerm = () => (
             letterheads, envelopes, and more.
           </li>
         </ul>
-        <p className="mt-4 text-gray-600">
+        <p className="mt-4 text-gray-600 dark:text-gray-400">
           We may modify, add, or remove services at our discretion.
         </p>
       </div>
 
       <div>
-        <h2 className="mb-4 text-xl font-bold text-gray-900">Use of Website</h2>
-        <ul className="list-disc list-inside space-y-2 text-gray-700">
+        <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-gray-100">
+          Use of Website
+        </h2>
+        <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
           <li>You agree to use this Website only for lawful purposes.</li>
           <li>You must not attempt to disrupt, hack, or misuse our Website.</li>
           <li>
@@ -66,10 +68,10 @@ const LegalTerm = () => (
       </div>
 
       <div>
-        <h2 className="mb-4 text-xl font-bold text-gray-900">
+        <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-gray-100">
           Orders & Payments
         </h2>
-        <ul className="list-disc list-inside space-y-2 text-gray-700">
+        <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
           <li>
             All projects and printing orders require clear specifications and
             confirmation.
@@ -90,10 +92,10 @@ const LegalTerm = () => (
       </div>
 
       <div>
-        <h2 className="mb-4 text-xl font-bold text-gray-900">
+        <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-gray-100">
           Intellectual Property
         </h2>
-        <ul className="list-disc list-inside space-y-2 text-gray-700">
+        <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
           <li>
             All custom designs, websites, and creative materials remain property
             of JS Matrix until full payment is received.
@@ -110,10 +112,10 @@ const LegalTerm = () => (
       </div>
 
       <div>
-        <h2 className="mb-4 text-xl font-bold text-gray-900">
+        <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-gray-100">
           Revisions & Limitations
         </h2>
-        <ul className="list-disc list-inside space-y-2 text-gray-700">
+        <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
           <li>
             Projects include a fixed number of revisions as stated in the
             proposal. Extra revisions may incur charges.
@@ -126,10 +128,10 @@ const LegalTerm = () => (
       </div>
 
       <div>
-        <h2 className="mb-4 text-xl font-bold text-gray-900">
+        <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-gray-100">
           Printing & Delivery
         </h2>
-        <ul className="list-disc list-inside space-y-2 text-gray-700">
+        <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
           <li>
             Printing orders are subject to availability and production
             timelines.
@@ -146,18 +148,20 @@ const LegalTerm = () => (
       </div>
 
       <div>
-        <h2 className="mb-4 text-xl font-bold text-gray-900">SEO Disclaimer</h2>
-        <p className="text-gray-700">
+        <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-gray-100">
+          SEO Disclaimer
+        </h2>
+        <p className="text-gray-700 dark:text-gray-300">
           While we use proven strategies, we cannot guarantee specific search
           engine rankings or traffic results due to factors beyond our control.
         </p>
       </div>
 
       <div>
-        <h2 className="mb-4 text-xl font-bold text-gray-900">
+        <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-gray-100">
           Limitation of Liability
         </h2>
-        <p className="text-gray-700">
+        <p className="text-gray-700 dark:text-gray-300">
           JS Matrix is not responsible for any indirect, incidental, or
           consequential damages. Our liability is limited to the amount paid for
           the specific service.
@@ -165,31 +169,35 @@ const LegalTerm = () => (
       </div>
 
       <div>
-        <h2 className="mb-4 text-xl font-bold text-gray-900">Termination</h2>
-        <p className="text-gray-700">
+        <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-gray-100">
+          Termination
+        </h2>
+        <p className="text-gray-700 dark:text-gray-300">
           We reserve the right to terminate services or Website access without
           notice if Terms are violated.
         </p>
       </div>
 
       <div>
-        <h2 className="mb-4 text-xl font-bold text-gray-900">
+        <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-gray-100">
           Changes to Terms
         </h2>
-        <p className="text-gray-700">
+        <p className="text-gray-700 dark:text-gray-300">
           We may update these Terms from time to time. Continued use of our
           Website and services means you accept the updated Terms.
         </p>
       </div>
 
       <div>
-        <h2 className="mb-4 text-xl font-bold text-gray-900">Contact Us</h2>
-        <div className="space-y-1 text-gray-700">
+        <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-gray-100">
+          Contact Us
+        </h2>
+        <div className="space-y-1 text-gray-700 dark:text-gray-300">
           <p>
             📧 Email:{" "}
             <a
               href="mailto:info@jsmatrix.in"
-              className="text-blue-600 hover:underline"
+              className="text-blue-600 dark:text-blue-400 hover:underline"
             >
               info@jsmatrix.in
             </a>
@@ -200,7 +208,7 @@ const LegalTerm = () => (
             <a
               href="https://www.jsmatrix.in"
               target="_blank"
-              className="text-blue-600 hover:underline"
+              className="text-blue-600 dark:text-blue-400 hover:underline"
             >
               https://www.jsmatrix.in
             </a>

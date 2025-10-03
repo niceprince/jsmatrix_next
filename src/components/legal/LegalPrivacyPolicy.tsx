@@ -1,7 +1,7 @@
 const LegalPrivacyPolicy = () => (
   <div className="w-full px-6 lg:max-w-[1000px] mx-auto">
     <div className="mb-12">
-      <p className="text-base font-medium leading-relaxed text-gray-700 sm:text-lg">
+      <p className="text-base font-medium leading-relaxed text-gray-700 dark:text-gray-300 sm:text-lg">
         At <strong>JS Matrix</strong> (“Company”, “we”, “our”, or “us”), we
         value your privacy and are committed to protecting your personal
         information. This Privacy Policy explains how we collect, use, disclose,
@@ -9,7 +9,7 @@ const LegalPrivacyPolicy = () => (
         <a
           href="https://www.jsmatrix.in"
           target="_blank"
-          className="text-blue-600 hover:underline"
+          className="text-blue-600 dark:text-blue-400 hover:underline"
         >
           https://www.jsmatrix.in
         </a>{" "}
@@ -21,10 +21,10 @@ const LegalPrivacyPolicy = () => (
     <div className="space-y-12">
       {/* Information We Collect */}
       <div>
-        <h2 className="mb-4 text-xl font-bold text-gray-900">
+        <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-gray-100">
           Information We Collect
         </h2>
-        <ul className="list-disc list-inside space-y-2 text-gray-700">
+        <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
           <li>
             Personal details you provide (e.g., name, email, phone number).
           </li>
@@ -42,10 +42,10 @@ const LegalPrivacyPolicy = () => (
 
       {/* How We Use Information */}
       <div>
-        <h2 className="mb-4 text-xl font-bold text-gray-900">
+        <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-gray-100">
           How We Use Your Information
         </h2>
-        <ul className="list-disc list-inside space-y-2 text-gray-700">
+        <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
           <li>To provide and improve our services.</li>
           <li>
             To communicate with you about projects, updates, or inquiries.
@@ -59,14 +59,14 @@ const LegalPrivacyPolicy = () => (
 
       {/* Sharing Information */}
       <div>
-        <h2 className="mb-4 text-xl font-bold text-gray-900">
+        <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-gray-100">
           Sharing of Information
         </h2>
-        <p className="text-gray-700 mb-4">
+        <p className="text-gray-700 dark:text-gray-300 mb-4">
           We do not sell or rent your personal information. We may share your
           information in limited circumstances:
         </p>
-        <ul className="list-disc list-inside space-y-2 text-gray-700">
+        <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
           <li>
             With trusted partners or vendors who help us deliver services.
           </li>
@@ -83,8 +83,10 @@ const LegalPrivacyPolicy = () => (
 
       {/* Data Security */}
       <div>
-        <h2 className="mb-4 text-xl font-bold text-gray-900">Data Security</h2>
-        <p className="text-gray-700">
+        <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-gray-100">
+          Data Security
+        </h2>
+        <p className="text-gray-700 dark:text-gray-300">
           We use appropriate technical and organizational measures to safeguard
           your personal information. However, no system is completely secure,
           and we cannot guarantee absolute protection.
@@ -93,10 +95,10 @@ const LegalPrivacyPolicy = () => (
 
       {/* Cookies & Tracking */}
       <div>
-        <h2 className="mb-4 text-xl font-bold text-gray-900">
+        <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-gray-100">
           Cookies & Tracking
         </h2>
-        <p className="text-gray-700 mb-4">
+        <p className="text-gray-700 dark:text-gray-300 mb-4">
           Our Website may use cookies and similar technologies to enhance user
           experience, analyze trends, and improve services. You can disable
           cookies through your browser settings, but some features may not work
@@ -106,8 +108,10 @@ const LegalPrivacyPolicy = () => (
 
       {/* Your Rights */}
       <div>
-        <h2 className="mb-4 text-xl font-bold text-gray-900">Your Rights</h2>
-        <ul className="list-disc list-inside space-y-2 text-gray-700">
+        <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-gray-100">
+          Your Rights
+        </h2>
+        <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
           <li>
             You have the right to access and update your personal information.
           </li>
@@ -121,10 +125,10 @@ const LegalPrivacyPolicy = () => (
 
       {/* Third-Party Links */}
       <div>
-        <h2 className="mb-4 text-xl font-bold text-gray-900">
+        <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-gray-100">
           Third-Party Links
         </h2>
-        <p className="text-gray-700">
+        <p className="text-gray-700 dark:text-gray-300">
           Our Website may contain links to third-party websites. We are not
           responsible for the privacy practices or content of those sites.
         </p>
@@ -132,8 +136,10 @@ const LegalPrivacyPolicy = () => (
 
       {/* Policy Updates */}
       <div>
-        <h2 className="mb-4 text-xl font-bold text-gray-900">Policy Updates</h2>
-        <p className="text-gray-700">
+        <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-gray-100">
+          Policy Updates
+        </h2>
+        <p className="text-gray-700 dark:text-gray-300">
           We may update this Privacy Policy from time to time. Any changes will
           be posted on this page with the updated effective date. Continued use
           of our Website after changes means you accept the revised policy.
@@ -142,13 +148,15 @@ const LegalPrivacyPolicy = () => (
 
       {/* Contact Us */}
       <div>
-        <h2 className="mb-4 text-xl font-bold text-gray-900">Contact Us</h2>
-        <div className="space-y-1 text-gray-700">
+        <h2 className="mb-4 text-xl font-bold text-gray-900 dark:text-gray-100">
+          Contact Us
+        </h2>
+        <div className="space-y-1 text-gray-700 dark:text-gray-300">
           <p>
             📧 Email:{" "}
             <a
               href="mailto:info@jsmatrix.in"
-              className="text-blue-600 hover:underline"
+              className="text-blue-600 dark:text-blue-400 hover:underline"
             >
               info@jsmatrix.in
             </a>
@@ -159,7 +167,7 @@ const LegalPrivacyPolicy = () => (
             <a
               href="https://www.jsmatrix.in"
               target="_blank"
-              className="text-blue-600 hover:underline"
+              className="text-blue-600 dark:text-blue-400 hover:underline"
             >
               https://www.jsmatrix.in
             </a>
