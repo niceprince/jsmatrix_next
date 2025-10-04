@@ -6,6 +6,7 @@ import "./globals.css";
 import Footer from "@/components/footer/Footer";
 import ScrollToTop from "@/components/common/ScrollToTop";
 import { headers } from "next/headers";
+import CookieConsent from "@/components/legal/CookieConsent";
 
 const exoSans = Exo({
   variable: "--font-exo-sans",
@@ -68,6 +69,7 @@ export default async function RootLayout({
         <Header />
         {children}
         <Footer />
+        <CookieConsent />
       </body>
     </html>
   );
