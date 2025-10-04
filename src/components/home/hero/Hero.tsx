@@ -1,29 +1,34 @@
 "use client";
 
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Bubbles from "./Bubbles";
 
 import { TextType } from "./TextType";
 import HeroWave from "./HeroWave";
-import styleds from './Hero.module.css';
+import styleds from "./Hero.module.css";
 import ScrollableButton from "../../common/ScrollableButton";
+// import Marquee from "./MarqueeEffect";
+// import { webTechnologies } from "@/app-contents/CommonItems";
 
 const Hero = () => {
   const [scrollAmount, setScrollAmount] = useState(0);
-  
+
   useEffect(() => {
     setScrollAmount(window.innerHeight);
-  }, [])
+  }, []);
 
   return (
     <>
       <section
         id="home"
-        className={`${styleds.heroSection} dark:bg-gray-dark relative z-10 overflow-hidden bg-white pb-16 pt-[120px] md:pb-[120px] md:pt-[150px]`}
+        className={`${styleds.heroSection} dark:bg-gray-dark relative z-10 overflow-hidden bg-white pb-16 pt-[90px] md:pb-[120px] md:pt-[110px]`}
       >
         <HeroWave />
         <Bubbles />
-        <div className="container mx-auto" style={{position: "relative", zIndex: '2'}}>
+        <div
+          className="container mx-auto"
+          style={{ position: "relative", zIndex: "2" }}
+        >
           <div className="flex flex-wrap">
             <div className="w-full sm:px-4">
               <div
@@ -31,15 +36,29 @@ const Hero = () => {
                 data-wow-delay=".2s"
               >
                 <h3 className="mb-5 text-2xl text-center font-light leading-tight text-white dark:text-white sm:text-3xl sm:leading-tight md:text-3xl md:leading-tight">
-                  The complete solution for an organisation relies on, every day.
+                  The complete solution for an organisation relies on, every
+                  day.
                 </h3>
                 <TextType />
                 <h2></h2>
                 <h4 className="dark:text-body-color-dark mb-4 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl">
-                  Your One-Stop Solution for Web Development, Web Maintenance, Graphics, Digital & Printing Needs</h4>
-                <p className="dark:text-body-color-dark mb-12 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl">
-                  Every business deserves to look good, rank high, and leave a lasting impression. That’s why we offer everything from web development and SEO to printing your business stationery, flyers, and banners — all in one place. We make it simple, fast, and reliable, so you can focus on what matters most: growing your business.
+                  Your One-Stop Solution for Web Development, Web Maintenance,
+                  Graphics, Digital & Printing Needs
+                </h4>
+                <p className="dark:text-body-color-dark mb-8 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl">
+                  Every business deserves to look good, rank high, and leave a
+                  lasting impression. That’s why we offer everything from web
+                  development and SEO to printing your business stationery,
+                  flyers, and banners — all in one place. We make it simple,
+                  fast, and reliable, so you can focus on what matters most:
+                  growing your business.
                 </p>
+                {/* <div className="mb-8">
+                  <Marquee
+                    items={webTechnologies}
+                    speed={25} // slower or faster scroll
+                  />
+                </div> */}
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <ScrollableButton scrollAmount={scrollAmount} />
                 </div>

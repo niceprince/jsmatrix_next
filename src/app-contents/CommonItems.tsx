@@ -12,3 +12,13 @@ export const List = ({ text }: { text: string }) => (
     {text}
   </p>
 );
+
+export const webTechnologies = [
+  "Javascript",
+  "React",
+  "Next.js",
+  "TypeScript",
+  "Tailwind CSS",
+  "Node.js",
+  "Ruby on Rails",
+];
