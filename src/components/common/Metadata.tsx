@@ -32,7 +32,7 @@ const Metadata: React.FC<MetadataProps> = ({
       />
       <meta
         property="og:image"
-        content="https://www.jsmatrix.in/images/jsmatrix-og.jpg"
+        content="https://www.jsmatrix.in/images/jsmatrix-social-cover.png"
       />
 
       <meta name="twitter:card" content="summary_large_image" />
@@ -50,7 +50,7 @@ const Metadata: React.FC<MetadataProps> = ({
       />
       <meta
         name="twitter:image"
-        content="https://www.jsmatrix.in/images/jsmatrix-og.jpg"
+        content="https://www.jsmatrix.in/images/jsmatrix-social-cover.png"
       />
       {children}
     </>
