@@ -37,7 +37,7 @@ export const printingItemsData = {
     },
     {
       id: 1002,
-      imgPath: `${staticPath}flyer.jpg`,
+      imgPath: `${staticPath}flyer1.jpg`,
       title: "Flyer Printing",
       description:
         "Creative and visually stunning designs for your brand, including logos, banners, social media graphics, and more.",
@@ -68,14 +68,28 @@ export const printingItemsData = {
       imgPath: `${staticPath}t-shirts.avif`,
       title: "T-Shirt Printing",
       description:
-        "Keep your website secure, updated, and fully functional with our reliable maintenance services.",
+        "Bring your ideas to life with our custom T-shirt printing services — vibrant designs, premium quality, and prints that truly represent you.",
     },
     {
       id: 1007,
       imgPath: `${staticPath}lanyard-printing.jpg`,
       title: "ID strip printing",
       description:
-        "Keep your website secure, updated, and fully functional with our reliable maintenance services.",
+        "From corporate offices to events and exhibitions, our lanyard printing services help you showcase your brand with durable materials, vibrant prints, and professional finishes.",
+    },
+    {
+      id: 1008,
+      imgPath: `${staticPath}personalized-gifts-1.jpg`,
+      title: "Personalised Gifts",
+      description:
+        "Make yours truly special with personalized creations that reflect love, memories, and connection. Crafted with care, designed for meaning.",
+    },
+    {
+      id: 1009,
+      imgPath: `${staticPath}sticker-labels.jpg`,
+      title: "Sticker & Label",
+      description:
+        "From product packaging to event giveaways, our custom sticker and label printing solutions offer durable materials, vibrant colors, and precise finishes to make your brand unforgettable.",
     },
   ],
 };
