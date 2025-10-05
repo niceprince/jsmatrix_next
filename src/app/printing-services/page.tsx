@@ -1,6 +1,7 @@
 import Metadata from "@/components/common/Metadata";
 import PageItemDisplay from "@/components/common/PageItemDisplay";
 import DevHeading from "@/components/developement/DevHeading";
+import { printingCategories } from "@/app-contents/PrintingPage";
 
 import {
   ColumnPrintSolutions,
@@ -14,6 +15,7 @@ import {
 import PagesWavesSection from "@/components/common/PagesWavesSection";
 import ColumnTypeSection from "@/components/common/ColumnTypeSection";
 import WhyChooseSection from "@/components/common/WhyChooseSection";
+import ElegantItemsDisplay from "@/components/common/ElegantItemDisplay";
 
 const PrintingServices = () => {
   return (
@@ -33,6 +35,7 @@ const PrintingServices = () => {
       <PagesWavesSection {...printingSubHeading} />
 
       <PageItemDisplay {...printingItemsData} />
+      <ElegantItemsDisplay printingCategories={printingCategories} />
 
       <ColumnTypeSection {...ColumnPrintSolutions} />
 

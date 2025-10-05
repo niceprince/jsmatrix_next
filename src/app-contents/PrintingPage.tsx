@@ -1,3 +1,5 @@
+import { PrintingCategory } from "@/components/common/ElegantItemDisplay";
+
 const staticPath = "/images/printing/";
 
 export const languages = [
@@ -31,7 +33,7 @@ export const printingItemsData = {
     {
       id: 1001,
       imgPath: `${staticPath}book.webp`,
-      title: "Book Printing",
+      title: "Books Printing",
       description:
         "Build modern, responsive, and scalable websites using technologies like React, NextJS, and Ruby on Rails.",
     },
@@ -65,7 +67,7 @@ export const printingItemsData = {
     },
     {
       id: 1006,
-      imgPath: `${staticPath}t-shirts.avif`,
+      imgPath: `${staticPath}t-shirt.jpg`,
       title: "T-Shirt Printing",
       description:
         "Bring your ideas to life with our custom T-shirt printing services — vibrant designs, premium quality, and prints that truly represent you.",
@@ -164,3 +166,87 @@ export const WhyChooseForPrinting = {
     },
   ],
 };
+
+export const printingCategories: PrintingCategory[] = [
+  {
+    title: "Marketing & Promotional Printing",
+    items: [
+      "Books Printing",
+      "Flyer / Leaflet Printing",
+      "Brochure Printing",
+      "Poster Printing",
+      "Banner Printing (Vinyl / Flex / Fabric)",
+      "Sticker & Label Printing",
+      "Calendar Printing",
+      "Catalogue Printing",
+      "Invitation Card Printing",
+      "Menu Card Printing",
+      "Tent Card Printing",
+    ],
+  },
+  {
+    title: "Personalized & Custom Printing",
+    items: [
+      "T-Shirt Printing",
+      "Hoodie & Apparel Printing",
+      "Mug Printing",
+      "Cap Printing",
+      "Mobile Cover Printing",
+      "Cushion & Pillow Printing",
+      "Photo Frame Printing",
+      "Keychain Printing",
+      "Badge / Button Printing",
+      "Custom Gift Printing",
+    ],
+  },
+  {
+    title: "Corporate & Office Printing",
+    items: [
+      "Business Card Printing",
+      "ID Card Printing",
+      "Lanyard Printing",
+      "Letterhead Printing",
+      "Envelope Printing",
+      "Notepad Printing",
+      "Folder Printing",
+      "Certificate Printing",
+      "Invoice Book Printing",
+    ],
+  },
+  {
+    title: "Outdoor & Large Format Printing",
+    items: [
+      "Flex Banner Printing",
+      "Vinyl Printing",
+      "Standee Printing",
+      "Glow Sign Board Printing",
+      "Acrylic Board Printing",
+      "Roll-Up Banner Printing",
+      "Foam Board Printing",
+      "One-Way Vision Printing",
+    ],
+  },
+  {
+    title: "Packaging & Product Printing",
+    items: [
+      "Box Printing",
+      "Paper Bag Printing",
+      "Label Printing",
+      "Tag Printing",
+      "Sleeve / Wrapper Printing",
+      "Packaging Sticker Printing",
+    ],
+  },
+  {
+    title: "Specialty & Creative Printing",
+    items: [
+      "Emboss / Deboss Printing",
+      "Foil Printing (Gold / Silver Foiling)",
+      "UV Printing",
+      "Screen Printing",
+      "Sublimation Printing",
+      "Digital Printing",
+      "Offset Printing",
+    ],
+  },
+];
