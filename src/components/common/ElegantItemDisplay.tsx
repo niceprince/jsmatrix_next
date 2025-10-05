@@ -2,7 +2,12 @@
 
 import { FC } from "react";
 import { motion, Variants } from "framer-motion";
-import { SendHorizontal } from "lucide-react";
+import {
+  ChevronsLeftRightEllipsis,
+  LucideIcon,
+  SendHorizontal,
+  VectorSquare,
+} from "lucide-react";
 import {
   Gift,
   Briefcase,
@@ -12,13 +17,14 @@ import {
   Sparkles,
 } from "lucide-react";
 
-export interface PrintingCategory {
+export interface ElegantCategory {
+  icon?: LucideIcon | string | boolean;
   title: string;
   items: string[];
 }
 
-type PrintingCategoryProps = {
-  printingCategories: PrintingCategory[];
+type ElegantCategoryProps = {
+  elegantCategories: ElegantCategory[];
   sectionTitle?: string;
   sectionDescription?: string;
 };
@@ -34,8 +40,8 @@ const cardVariants: Variants = {
 
 const iconMap = [Gift, Briefcase, Megaphone, Printer, Package, Sparkles];
 
-const ElegantItemsDisplay: FC<PrintingCategoryProps> = ({
-  printingCategories,
+const ElegantItemsDisplay: FC<ElegantCategoryProps> = ({
+  elegantCategories,
   sectionTitle,
   sectionDescription = `Discover a complete range of printing solutions — from personalized
             gifts and corporate essentials to large-format banners and packaging
@@ -59,7 +65,7 @@ const ElegantItemsDisplay: FC<PrintingCategoryProps> = ({
           )}
 
           {sectionDescription && (
-            <p className="mt-4 font-bold text-gray-600 max-w-2xl mx-auto text-base">
+            <p className="mt-4 text-xl font-semibold text-gray-900 max-w-3xl mx-auto">
               {sectionDescription}
             </p>
           )}
@@ -67,8 +73,11 @@ const ElegantItemsDisplay: FC<PrintingCategoryProps> = ({
 
         {/* Cards */}
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-          {printingCategories.map((cat, i) => {
-            const Icon = iconMap[i];
+          {elegantCategories.map((cat, i) => {
+            let Icon = iconMap[i];
+            if (cat.icon === "web") Icon = ChevronsLeftRightEllipsis;
+            else if (cat.icon === "graphic") Icon = VectorSquare;
+
             return (
               <motion.div
                 key={i}
@@ -81,7 +90,7 @@ const ElegantItemsDisplay: FC<PrintingCategoryProps> = ({
                 className="bg-white shadow-sm border border-gray-100 rounded-2xl p-6 hover:shadow-lg transition-all"
               >
                 <div className="flex items-center gap-3 mb-5">
-                  <Icon className="w-8 h-8 text-indigo-500" />
+                  <Icon className="w-8 h-8 text-red-700" />
                   <h3 className="text-lg font-semibold text-gray-800">
                     {cat.title}
                   </h3>

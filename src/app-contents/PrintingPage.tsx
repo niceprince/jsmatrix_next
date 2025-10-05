@@ -1,4 +1,4 @@
-import { PrintingCategory } from "@/components/common/ElegantItemDisplay";
+import { ElegantCategory } from "@/components/common/ElegantItemDisplay";
 
 const staticPath = "/images/printing/";
 
@@ -167,7 +167,7 @@ export const WhyChooseForPrinting = {
   ],
 };
 
-export const printingCategories: PrintingCategory[] = [
+export const printingCategories: ElegantCategory[] = [
   {
     title: "Marketing & Promotional Printing",
     items: [

@@ -1,3 +1,5 @@
+import { ElegantCategory } from "@/components/common/ElegantItemDisplay";
+
 export const languages = [
   "Books",
   "Graphics",
@@ -45,6 +47,11 @@ export const GraphicsPageItems = {
       description: `We design intuitive, user-friendly interfaces for websites and
                 mobile applications with a strong focus on user experience,
                 aesthetics, and functionality.`,
+    },
+    {
+      id: 10018,
+      keyword: "Motion Graphics & Animation",
+      description: `Bring your brand to life with engaging animations, dynamic visuals, and motion graphics that capture attention.`,
     },
     {
       id: 10014,
@@ -102,3 +109,104 @@ export const WhyChooseForGraphics = {
     },
   ],
 };
+
+export const graphicDesignCategories: ElegantCategory[] = [
+  {
+    icon: "graphic",
+    title: "Visual Identity / Branding Design",
+    items: [
+      "Logo Design",
+      "Business Card Design",
+      "Letterhead Design",
+      "Brand Guidelines",
+      "Typography & Color Palette",
+    ],
+  },
+  {
+    icon: "graphic",
+    title: "Marketing & Advertising Design",
+    items: [
+      "Poster Design",
+      "Flyers / Leaflets",
+      "Brochure Design",
+      "Social Media Graphics",
+      "Banner & Billboard Design",
+      "Email Campaign Graphics",
+    ],
+  },
+  {
+    icon: "graphic",
+    title: "Web & Digital Design",
+    items: [
+      "Website Design",
+      "Landing Page Design",
+      "Mobile App Design",
+      "Email Templates",
+      "Social Media Design",
+    ],
+  },
+  {
+    icon: "graphic",
+    title: "UI & UX Design",
+    items: [
+      "App UI Design",
+      "Dashboard Design",
+      "Interactive Prototypes",
+      "Wireframing",
+      "User Testing Interfaces",
+    ],
+  },
+  {
+    icon: "graphic",
+    title: "Publication & Print Design",
+    items: [
+      "Magazine Design",
+      "Book Layout Design",
+      "Newspaper Design",
+      "Annual Report Design",
+      "Catalog Design",
+    ],
+  },
+  {
+    icon: "graphic",
+    title: "Packaging & Product Design",
+    items: [
+      "Product Label Design",
+      "Box & Packaging Design",
+      "Shopping Bag Design",
+      "Merchandise Design",
+      "Bottle & Container Design",
+    ],
+  },
+  {
+    icon: "graphic",
+    title: "Motion Graphics & Animation",
+    items: [
+      "Animated Videos",
+      "GIFs & Cinemagraphs",
+      "Social Media Ads with Motion",
+      "Title Sequences for Film/TV",
+    ],
+  },
+  {
+    icon: "graphic",
+    title: "Environmental & Experiential Design",
+    items: [
+      "Signage Design",
+      "Trade Show Booth Design",
+      "Retail Space Graphics",
+      "Wayfinding Systems",
+    ],
+  },
+  {
+    icon: "graphic",
+    title: "Illustration & Concept Art",
+    items: [
+      "Character Design",
+      "Editorial Illustrations",
+      "Infographics",
+      "Iconography",
+      "Concept Art",
+    ],
+  },
+];

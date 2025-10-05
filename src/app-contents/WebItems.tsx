@@ -1,3 +1,5 @@
+import { ElegantCategory } from "@/components/common/ElegantItemDisplay";
+
 export const ExpertiseFieldsData = {
   title: "Our Core Expertise 🚀",
   description:
@@ -267,3 +269,112 @@ export const WebDevItems = {
     // },
   ],
 };
+
+export const webDevelopmentCategories: ElegantCategory[] = [
+  {
+    icon: "web",
+    title: "Frontend Development",
+    items: [
+      "HTML / CSS / JavaScript",
+      "React, Angular, Vue.js",
+      "Responsive Web Design",
+      "UI/UX Implementation",
+      "Single Page Applications (SPA)",
+    ],
+  },
+  {
+    icon: "web",
+    title: "Backend Development",
+    items: [
+      "React, Nextjs, Node.js, Ruby on Rails, PHP",
+      "RESTful API / GraphQL API",
+      "Database Management (MySQL, PostgreSQL, MongoDB)",
+      "Authentication & Authorization",
+      "Server-side Rendering",
+    ],
+  },
+  {
+    icon: "web",
+    title: "Full Stack Development",
+    items: [
+      "MERN / MEAN ",
+      "End-to-end web applications",
+      "Cloud deployment and hosting",
+      "Server & Client-side integration",
+    ],
+  },
+  {
+    icon: "web",
+    title: "E-commerce Development",
+    items: [
+      "Shopify, WooCommerce, Magento",
+      "Payment Gateway Integration",
+      "Product Catalog & Shopping Cart",
+      "Subscription & Membership Systems",
+      "Online Store Management",
+    ],
+  },
+  {
+    icon: "web",
+    title: "CMS & Website Builders",
+    items: [
+      "WordPress, Joomla, Drupal",
+      "Headless CMS (Strapi, Contentful)",
+      "Custom CMS Solutions",
+      "Content Management & Updates",
+    ],
+  },
+  {
+    icon: "web",
+    title: "Web App Development",
+    items: [
+      "SaaS Applications",
+      "Admin Dashboards & Panels",
+      "Real-time Applications (Chat, Notifications)",
+      "Progressive Web Apps (PWA)",
+      "Interactive Web Platforms",
+    ],
+  },
+  {
+    icon: "web",
+    title: "API Development & Integration",
+    items: [
+      "REST API / GraphQL API",
+      "Third-party Service Integration",
+      "Webhooks & Microservices",
+      "Data Fetching & Automation",
+    ],
+  },
+  {
+    icon: "web",
+    title: "Mobile-Friendly & Responsive Design",
+    items: [
+      "Mobile-first Web Design",
+      "Cross-browser Compatibility",
+      "Touchscreen Optimization",
+      "Adaptive Layouts",
+    ],
+  },
+  {
+    icon: "web",
+    title: "Web Security & Performance",
+    items: [
+      "SSL / HTTPS Setup",
+      "Caching & Performance Optimization",
+      "Firewall & Security Practices",
+      "Load Testing & Monitoring",
+      "Site Speed Optimization",
+    ],
+  },
+  {
+    icon: "web",
+    title: "Hosting, Deployment & Maintenance",
+    items: [
+      "Cloud Hosting (AWS, Azure, Vercel, Netlify)",
+      "Continuous Deployment / CI/CD",
+      "Site Backups & Updates",
+      "Bug Fixes & Feature Upgrades",
+      "Website Monitoring & Support",
+    ],
+  },
+];

@@ -35,7 +35,7 @@ const PrintingServices = () => {
       <PagesWavesSection {...printingSubHeading} />
 
       <PageItemDisplay {...printingItemsData} />
-      <ElegantItemsDisplay printingCategories={printingCategories} />
+      <ElegantItemsDisplay elegantCategories={printingCategories} />
 
       <ColumnTypeSection {...ColumnPrintSolutions} />
 

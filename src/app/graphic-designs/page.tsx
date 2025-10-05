@@ -3,6 +3,7 @@ import Metadata from "@/components/common/Metadata";
 import PagesWavesSection from "@/components/common/PagesWavesSection";
 import DevHeading from "@/components/developement/DevHeading";
 import {
+  graphicDesignCategories,
   GraphicsPageItems,
   graphicsSubHeading,
   headText,
@@ -11,6 +12,7 @@ import {
   WhyChooseForGraphics,
 } from "@/app-contents/GraphicDesigns";
 import WhyChooseSection from "@/components/common/WhyChooseSection";
+import ElegantItemsDisplay from "@/components/common/ElegantItemDisplay";
 
 const GraphicDesigns = () => (
   <>
@@ -27,6 +29,10 @@ const GraphicDesigns = () => (
       />
       <PagesWavesSection {...graphicsSubHeading} />
       <ItemWithGrids {...GraphicsPageItems} />
+      <ElegantItemsDisplay
+        elegantCategories={graphicDesignCategories}
+        sectionDescription="Explore a complete range of graphic design solutions — from brand identity and marketing materials to web design, packaging, and motion graphics."
+      />
       <WhyChooseSection {...WhyChooseForGraphics} />
     </section>
   </>

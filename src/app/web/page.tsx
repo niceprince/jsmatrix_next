@@ -4,9 +4,11 @@ import DevHeading from "@/components/developement/DevHeading";
 import ColumnTypeSection from "@/components/common/ColumnTypeSection";
 import {
   ExpertiseFieldsData,
+  webDevelopmentCategories,
   webLandingSection,
 } from "@/app-contents/WebItems";
 import SeparateLandingSection from "@/components/common/SeparateLandingSection";
+import ElegantItemsDisplay from "@/components/common/ElegantItemDisplay";
 
 const Web = () => {
   const languages = [
@@ -46,8 +48,11 @@ const Web = () => {
       </section>
 
       <SeparateLandingSection {...webLandingSection} />
-
       <ColumnTypeSection {...ExpertiseFieldsData} />
+      <ElegantItemsDisplay
+        elegantCategories={webDevelopmentCategories}
+        sectionDescription="Transform your digital presence with our full spectrum of web development services, including frontend, backend, e-commerce, CMS, and cloud deployment."
+      />
     </>
   );
 };
