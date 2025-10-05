@@ -51,7 +51,7 @@ export const printingItemsData = {
     },
     {
       id: 1004,
-      imgPath: `${staticPath}banner.png`,
+      imgPath: `${staticPath}banner.jpg`,
       title: "Banner Printing",
       description:
         "Grow your online presence with SEO, PPC, social media marketing, and content strategies tailored to your business.",
