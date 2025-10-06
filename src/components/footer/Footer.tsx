@@ -17,7 +17,15 @@ const Footer = () => {
                   <Image
                     src="/images/jsm-logo.svg"
                     alt="logo"
-                    width={130}
+                    className="dark:hidden"
+                    width={140}
+                    height={50}
+                  />
+                  <Image
+                    src="/images/jsm-logo-w.svg"
+                    alt="logo"
+                    className="hidden dark:block"
+                    width={140}
                     height={50}
                   />
                 </Link>
