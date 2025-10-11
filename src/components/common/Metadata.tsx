@@ -17,6 +17,16 @@ const Metadata: React.FC<MetadataProps> = ({
       <title>{title}</title>
       <meta name="keywords" content={keywords} />
       <meta name="description" content={description} />
+
+      <link
+        rel="apple-touch-icon"
+        href="https://www.jsmatrix.in/images/jsm-icon.svg"
+      />
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="https://www.jsmatrix.in/images/jsm-icon.svg"
+      />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://jsmatrix.in/" />
       <meta
