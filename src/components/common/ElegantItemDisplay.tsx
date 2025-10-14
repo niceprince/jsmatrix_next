@@ -87,7 +87,7 @@ const ElegantItemsDisplay: FC<ElegantCategoryProps> = ({
                 viewport={{ once: true }}
                 custom={i}
                 whileHover={{ y: -5, scale: 1.02 }}
-                className="bg-white shadow-sm border border-gray-100 rounded-2xl p-6 hover:shadow-lg transition-all"
+                className="bg-white shadow-sm border border-gray-100 rounded-2xl p-6 hover:shadow-lg"
               >
                 <div className="flex items-center gap-3 mb-5">
                   <Icon className="w-8 h-8 text-red-700" />

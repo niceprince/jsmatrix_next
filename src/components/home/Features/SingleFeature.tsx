@@ -10,7 +10,7 @@ type SingleFeature = {
 };
 
 const SingleFeature = ({ feature }: { feature: SingleFeature }) => {
-  const { id, icon, title, paragraph } = feature;
+  const { icon, title, paragraph } = feature;
 
   const cardVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
@@ -23,19 +23,16 @@ const SingleFeature = ({ feature }: { feature: SingleFeature }) => {
 
   return (
     <motion.div
-      key={id}
+      layout
       variants={cardVariants}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true }}
+      viewport={{ once: true, amount: 0.2 }}
       custom={2}
       whileHover={{ y: -5, scale: 1.02 }}
-      className="w-full p-4 transition-all"
+      className="w-full p-4"
     >
-      <div
-        className="wow fadeInUp shadow-2xl shadow-gray-700 border border-solid border-sky-100 rounded-2xl p-4 sm:p-8 "
-        data-wow-delay=".15s"
-      >
+      <div className="shadow-2xl shadow-gray-700 border border-solid border-sky-100 rounded-2xl p-4 sm:p-8 ">
         <div className="w-full mb-6 flex items-center justify-space-between">
           <div className="flex h-[70px] w-[70px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
             {icon}
