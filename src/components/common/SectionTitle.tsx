@@ -12,15 +12,16 @@ const SectionTitle = ({
   paragraph,
   width = "570px",
   center,
-  mb = "100px",
   ...props
 }: SectionTitleProps) => {
   return (
     <>
       <div
-        className={`wow fadeInUp w-full ${center ? "mx-auto text-center" : ""}`}
+        className={`wow fadeInUp w-full ${
+          center ? "mx-auto text-center" : ""
+        } pb-16 md:pb-20 lg:pb-28`}
         data-wow-delay=".1s"
-        style={{ maxWidth: width, marginBottom: mb }}
+        style={{ maxWidth: width }}
       >
         {title && (
           <h1
