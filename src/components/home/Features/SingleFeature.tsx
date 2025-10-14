@@ -1,4 +1,6 @@
+"use client";
 import { JSX } from "react";
+import { motion, Variants } from "framer-motion";
 
 type SingleFeature = {
   id: number;
@@ -8,10 +10,28 @@ type SingleFeature = {
 };
 
 const SingleFeature = ({ feature }: { feature: SingleFeature }) => {
-  const { icon, title, paragraph } = feature;
+  const { id, icon, title, paragraph } = feature;
+
+  const cardVariants: Variants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: (i: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: { delay: i * 0.1, duration: 0.6, ease: "easeOut" },
+    }),
+  };
 
   return (
-    <div className="w-full p-4">
+    <motion.div
+      key={id}
+      variants={cardVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      custom={2}
+      whileHover={{ y: -5, scale: 1.02 }}
+      className="w-full p-4 transition-all"
+    >
       <div
         className="wow fadeInUp shadow-2xl shadow-gray-700 border border-solid border-sky-100 rounded-2xl p-4 sm:p-8 "
         data-wow-delay=".15s"
@@ -30,7 +50,7 @@ const SingleFeature = ({ feature }: { feature: SingleFeature }) => {
           {paragraph}
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

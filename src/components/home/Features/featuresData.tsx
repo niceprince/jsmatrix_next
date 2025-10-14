@@ -1,782 +1,144 @@
-
+import {
+  webComputerIcon,
+  webGraphicsIcon,
+  printingSvg,
+  stationarySvgIcon,
+  seoSvgIcon,
+  otherSevicesSvgIcon,
+  visualIdentityIcon,
+  maketing,
+  packagingIcon,
+  corporateIcon,
+  webDesignIcon,
+  webMaintenanceIcon,
+  uxDesignIcon,
+  threeDPrinting,
+} from "@/app-contents/SvgContents";
 const featuresData = [
   {
     id: 101,
-    icon: (
-      <svg
-        version="1.1"
-        id="Layer_1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 512 512"
-      >
-        <circle style={{ fill: "#FAD24D" }} cx={256} cy={256} r={256} />
-        <ellipse
-          style={{ fill: "#EDB937" }}
-          cx={256}
-          cy="421.646"
-          rx="182.284"
-          ry="14.371"
-        />
-        <path
-          style={{ fill: "#666666" }}
-          d="M65.982,67.223h380.037c12.486,0,22.702,10.216,22.702,22.702v234.107H43.282V89.924
-            c0-12.486,10.216-22.702,22.702-22.702H65.982z"
-        />
-        <g>
-          <path
-            style={{ fill: "#FFFFFF" }}
-            d="M58.694,308.617h394.609V89.924c0-3.979-3.309-7.288-7.285-7.288H65.982
-            c-3.977,0-7.285,3.309-7.285,7.288v218.693H58.694z"
-          />
-          <path
-            style={{ fill: "#FFFFFF" }}
-            d="M468.718,324.031v24.827c0,12.488-11.26,22.702-25.024,22.702H68.307
-            c-13.764,0-25.024-10.214-25.024-22.702v-24.827H468.72H468.718z"
-          />
-        </g>
-        <circle style={{ fill: "#B6B6B8" }} cx={256} cy="346.803" r="7.816" />
-        <path
-          style={{ fill: "#C2C2C4" }}
-          d="M305.066,407.273l36.095,11.566H170.836l29.123-11.566v-35.713h105.105v35.713H305.066z"
-        />
-        <path
-          style={{ fill: "#ECF0F1" }}
-          d="M199.961,407.273h105.106l36.095,11.566v4.98h-85.16h-85.164v-4.98L199.961,407.273z"
-        />
-        <path
-          style={{ fill: "#919191" }}
-          d="M199.961,371.559h105.106v35.713L199.961,371.559z"
-        />
-        <rect
-          x="75.849"
-          y="97.5"
-          style={{ fill: "#20D0C2" }}
-          width="40.742"
-          height="7.016"
-        />
-        <rect
-          x="121.303"
-          y="97.5"
-          style={{ fill: "#FF5B62" }}
-          width="72.269"
-          height="7.016"
-        />
-        <g>
-          <rect
-            x="197.055"
-            y="97.5"
-            style={{ fill: "#FAD24D" }}
-            width="61.53"
-            height="7.016"
-          />
-          <rect
-            x="118.648"
-            y="126.363"
-            style={{ fill: "#FAD24D" }}
-            width="21.616"
-            height="7.016"
-          />
-        </g>
-        <rect
-          x="142.761"
-          y="126.363"
-          style={{ fill: "#FF5B62" }}
-          width="38.345"
-          height="7.016"
-        />
-        <g>
-          <rect
-            x="182.953"
-            y="126.363"
-            style={{ fill: "#20D0C2" }}
-            width="32.642"
-            height="7.016"
-          />
-          <rect
-            x="75.592"
-            y="138.689"
-            style={{ fill: "#20D0C2" }}
-            width="37.976"
-            height="7.016"
-          />
-        </g>
-        <rect
-          x="117.95"
-          y="138.689"
-          style={{ fill: "#FAD24D" }}
-          width="67.348"
-          height="7.016"
-        />
-        <rect
-          x="116.133"
-          y="153.42"
-          style={{ fill: "#FF5B62" }}
-          width="37.976"
-          height="7.016"
-        />
-        <rect
-          x="158.49"
-          y="153.42"
-          style={{ fill: "#20D0C2" }}
-          width="67.348"
-          height="7.016"
-        />
-        <rect
-          x="82.359"
-          y="167.503"
-          style={{ fill: "#FAD24D" }}
-          width="37.976"
-          height="7.016"
-        />
-        <rect
-          x="125.355"
-          y="167.503"
-          style={{ fill: "#20D0C2" }}
-          width="27.177"
-          height="7.016"
-        />
-        <rect
-          x="158.93"
-          y="167.503"
-          style={{ fill: "#FF5B62" }}
-          width="76.311"
-          height="7.016"
-        />
-        <g>
-          <rect
-            x="240.83"
-            y="167.503"
-            style={{ fill: "#20D0C2" }}
-            width="27.177"
-            height="7.016"
-          />
-          <rect
-            x="74.245"
-            y="182.234"
-            style={{ fill: "#20D0C2" }}
-            width="101.622"
-            height="7.016"
-          />
-        </g>
-        <rect
-          x="180.298"
-          y="182.234"
-          style={{ fill: "#FAD24D" }}
-          width="27.177"
-          height="7.016"
-        />
-        <rect
-          x="211.347"
-          y="182.234"
-          style={{ fill: "#FF5B62" }}
-          width="37.976"
-          height="7.016"
-        />
-        <g>
-          <rect
-            x="120.375"
-            y="111.093"
-            style={{ fill: "#FFFFFF" }}
-            width="2.807"
-            height="8.416"
-          />
-          <rect
-            x="193.193"
-            y="138.689"
-            style={{ fill: "#FFFFFF" }}
-            width="2.807"
-            height="8.416"
-          />
-        </g>
-        <rect
-          x="75.849"
-          y="202.994"
-          style={{ fill: "#20D0C2" }}
-          width="40.742"
-          height="7.016"
-        />
-        <rect
-          x="121.303"
-          y="202.994"
-          style={{ fill: "#FF5B62" }}
-          width="72.269"
-          height="7.016"
-        />
-        <g>
-          <rect
-            x="197.055"
-            y="202.994"
-            style={{ fill: "#FAD24D" }}
-            width="61.53"
-            height="7.016"
-          />
-          <rect
-            x="118.648"
-            y="231.847"
-            style={{ fill: "#FAD24D" }}
-            width="21.616"
-            height="7.016"
-          />
-        </g>
-        <rect
-          x="142.761"
-          y="231.847"
-          style={{ fill: "#FF5B62" }}
-          width="38.345"
-          height="7.016"
-        />
-        <g>
-          <rect
-            x="182.953"
-            y="231.847"
-            style={{ fill: "#20D0C2" }}
-            width="32.642"
-            height="7.016"
-          />
-          <rect
-            x="75.592"
-            y="244.183"
-            style={{ fill: "#20D0C2" }}
-            width="37.976"
-            height="7.016"
-          />
-        </g>
-        <rect
-          x="117.95"
-          y="244.183"
-          style={{ fill: "#FAD24D" }}
-          width="67.348"
-          height="7.016"
-        />
-        <g>
-          <rect
-            x="120.375"
-            y="216.577"
-            style={{ fill: "#FFFFFF" }}
-            width="2.807"
-            height="8.416"
-          />
-          <rect
-            x="193.193"
-            y="244.183"
-            style={{ fill: "#FFFFFF" }}
-            width="2.807"
-            height="8.416"
-          />
-        </g>
-        <g>
-          <rect
-            x="290.223"
-            y="97.5"
-            style={{ fill: "#DCE3DB" }}
-            width="147.352"
-            height="33.984"
-          />
-          <path
-            style={{ fill: "#DCE3DB" }}
-            d="M290.221,136.298h70.178v44.852h-70.178V136.298z"
-          />
-          <path
-            style={{ fill: "#DCE3DB" }}
-            d="M367.398,136.298h70.178v44.852h-70.178V136.298z"
-          />
-          <path
-            style={{ fill: "#DCE3DB" }}
-            d="M290.423,187.581h146.953v2.172H290.423V187.581z M290.423,208.115h96.534v2.172h-96.534V208.115z
-            M290.423,201.269h146.953v2.172H290.423V201.269z M290.423,194.426h146.953v2.172H290.423V194.426z"
-          />
-          <path
-            style={{ fill: "#DCE3DB" }}
-            d="M290.048,215.622h43.793v43.42h-43.793V215.622z M393.961,215.622h43.795v43.42h-43.795V215.622z
-            M342.005,215.622h43.793v43.42h-43.793V215.622z"
-          />
-          <path
-            style={{ fill: "#DCE3DB" }}
-            d="M290.423,265.088h146.953v2.172H290.423V265.088z M290.423,285.622h96.534v2.172h-96.534V285.622z
-            M290.423,278.777h146.953v2.172H290.423V278.777z M290.423,271.934h146.953v2.172H290.423V271.934z"
-          />
-        </g>
-      </svg>
-    ),
+    icon: webDesignIcon,
+    title: "Web Design",
+    paragraph:
+      "We craft visually engaging and user-friendly website designs that reflect your brand identity. Our responsive layouts ensure a smooth browsing experience across all devices, combining creativity, usability, and performance.",
+  },
+  {
+    id: 1011,
+    icon: webComputerIcon,
     title: "Web Development",
     paragraph:
       "With expertise in the latest technologies and frameworks, we craft dynamic, user-centric websites that reflect your brand's identity. Our goal is to help your business thrive in the digital landscape through innovative and reliable web solutions.",
   },
   {
-    id: 202,
-    icon: (
-      <svg
-        version="1.1"
-        id="Layer_1"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-        viewBox="0 0 511.883 511.883"
-        xmlSpace="preserve"
-      >
-        <polygon
-          style={{ fill: "#CCD1D9" }}
-          points="341.251,479.889 170.626,479.889 191.894,373.336 319.942,373.305 "
-        />
-        <g>
-          <path
-            style={{ fill: "#E6E9ED" }}
-            d="M511.883,383.913c0,5.905-4.781,10.669-10.67,10.669H10.662C4.773,394.582,0,389.818,0,383.913
-          V42.663c0-5.889,4.772-10.669,10.662-10.669h490.551c5.889,0,10.67,4.78,10.67,10.669V383.913z"
-          />
-          <path
-            style={{ fill: "#E6E9ED" }}
-            d="M341.251,479.889H170.626c-5.89,0-10.669-4.764-10.669-10.653s4.78-10.67,10.669-10.67h170.625
-          c5.889,0,10.669,4.78,10.669,10.67S347.139,479.889,341.251,479.889z"
-          />
-        </g>
-        <path
-          style={{ fill: "#A0D468" }}
-          d="M501.213,31.994H10.662C4.773,31.994,0,36.774,0,42.663v287.934h511.883V42.663
-        C511.883,36.774,507.102,31.994,501.213,31.994z"
-        />
-        <g>
-          <path
-            style={{ fill: "#434A54" }}
-            d="M501.213,31.994h-95.979v298.603h106.648V42.663C511.883,36.774,507.102,31.994,501.213,31.994z"
-          />
-          <path
-            style={{ fill: "#434A54" }}
-            d="M266.603,362.589c0,5.89-4.78,10.669-10.669,10.669c-5.889,0-10.662-4.779-10.662-10.669
-          s4.772-10.669,10.662-10.669S266.603,356.699,266.603,362.589z"
-          />
-        </g>
-        <rect
-          x="405.232"
-          y="159.962"
-          style={{ fill: "#656D78" }}
-          width="105.16"
-          height="21.338"
-        />
-        <polygon
-          style={{ fill: "#E6E9ED" }}
-          points="127.963,245.085 176.718,163.823 225.464,245.085 "
-        />
-        <polygon
-          style={{ fill: "#F5F7FA" }}
-          points="168.594,245.085 233.595,131.33 298.588,245.085 "
-        />
-        <g>
-          <rect
-            x="85.312"
-            y="95.982"
-            style={{ fill: "#434A54" }}
-            width="21.331"
-            height="21.339"
-          />
-          <rect
-            x="202.622"
-            y="95.982"
-            style={{ fill: "#434A54" }}
-            width="21.323"
-            height="21.339"
-          />
-          <rect
-            x="319.922"
-            y="95.982"
-            style={{ fill: "#434A54" }}
-            width="21.324"
-            height="21.339"
-          />
-          <rect
-            x="319.922"
-            y="181.302"
-            style={{ fill: "#434A54" }}
-            width="21.324"
-            height="21.323"
-          />
-          <rect
-            x="319.922"
-            y="266.612"
-            style={{ fill: "#434A54" }}
-            width="21.324"
-            height="21.322"
-          />
-          <rect
-            x="85.312"
-            y="266.612"
-            style={{ fill: "#434A54" }}
-            width="21.331"
-            height="21.322"
-          />
-          <rect
-            x="85.312"
-            y="181.302"
-            style={{ fill: "#434A54" }}
-            width="21.331"
-            height="21.323"
-          />
-          <rect
-            x="202.622"
-            y="266.612"
-            style={{ fill: "#434A54" }}
-            width="21.323"
-            height="21.322"
-          />
-        </g>
-      </svg>
-
-    ),
-    title: "Graphic Designs",
+    id: 1012,
+    icon: webMaintenanceIcon,
+    title: "Web Maintenance",
+    paragraph:
+      "We provide regular website maintenance including updates, backups, security checks, and performance optimization. Our service ensures your site runs smoothly, stays secure, and remains up to date at all times.",
+  },
+  {
+    id: 5055,
+    icon: seoSvgIcon,
+    title: "SEO Service",
+    paragraph:
+      "Boost your website’s visibility and traffic with our SEO services. We optimize keywords, content, and site structure to improve your search engine ranking, drive organic growth, and increase conversions effectively.",
+  },
+  {
+    id: 5056,
+    icon: uxDesignIcon,
+    title: "UX Design",
+    paragraph:
+      "Our UX design focuses on creating intuitive, accessible, and enjoyable digital experiences. We combine research, strategy, and creativity to make every user interaction seamless and goal-oriented.",
+  },
+  {
+    id: 2027,
+    icon: webGraphicsIcon,
+    title: "Graphic Design",
     paragraph:
       "We create visually striking and impactful designs that communicate your brand’s story with clarity and creativity. From logos to marketing materials, our designs are crafted to captivate audiences and leave a lasting impression.",
   },
   {
-    id: 303,
-    icon: (
-      <svg
-        version="1.1"
-        id="Layer_1"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-        viewBox="0 0 512.001 512.001"
-        xmlSpace="preserve"
-      >
-        <rect
-          x="15.673"
-          y="100.451"
-          style={{ fill: "#B4B4B4" }}
-          width="480.655"
-          height="159.539"
-        />
-        <g>
-          <rect
-            x="15.673"
-            y="100.451"
-            style={{ fill: "#E0E0E0" }}
-            width="240.328"
-            height="159.539"
-          />
-          <rect
-            y="36.457"
-            style={{ fill: "#E0E0E0" }}
-            width="512.001"
-            height="127.995"
-          />
-        </g>
-        <rect y="36.457" style={{ fill: "#F1F1F1" }} width={256} height="127.995" />
-        <g>
-          <rect
-            y="164.459"
-            style={{ fill: "#3B67AA" }}
-            width="31.346"
-            height="311.085"
-          />
-          <rect
-            x="480.655"
-            y="164.459"
-            style={{ fill: "#3B67AA" }}
-            width="31.346"
-            height="311.085"
-          />
-          <rect
-            x="81.823"
-            y="84.778"
-            style={{ fill: "#3B67AA" }}
-            width="348.345"
-            height="31.346"
-          />
-        </g>
-        <polygon
-          style={{ fill: "#FBBA00" }}
-          points="373.88,100.457 138.12,100.457 138.12,389.315 295.445,389.315 373.88,310.88 "
-        />
-        <g>
-          <polygon
-            style={{ fill: "#FBDB80" }}
-            points="295.445,389.315 295.445,310.88 373.88,310.88 	"
-          />
-          <rect
-            x="138.12"
-            y="100.451"
-            style={{ fill: "#FBDB80" }}
-            width="117.881"
-            height="288.861"
-          />
-        </g>
-        <g>
-          <rect
-            x="184.334"
-            y="148.786"
-            style={{ fill: "#F28E00" }}
-            width="143.334"
-            height="31.346"
-          />
-          <rect
-            x="184.334"
-            y="198.783"
-            style={{ fill: "#F28E00" }}
-            width="143.334"
-            height="31.346"
-          />
-          <rect
-            x="184.334"
-            y="248.779"
-            style={{ fill: "#F28E00" }}
-            width="143.334"
-            height="31.346"
-          />
-        </g>
-      </svg>
-
-    ),
-    title: "Printing Solutions",
+    id: 2028,
+    icon: maketing,
+    title: "Marketing & Advertising Design",
+    paragraph:
+      "We create compelling marketing visuals and ad designs that capture attention and convert leads. Our creative approach ensures your campaigns stand out across digital and print platforms.",
+  },
+  {
+    id: 2029,
+    icon: visualIdentityIcon,
+    title: "Visual Identity",
+    paragraph:
+      "We develop complete visual identities that define your brand’s personality. From logos to color schemes, we create consistent branding that builds recognition and emotional connection with your audience.",
+  },
+  {
+    id: 2020,
+    icon: webGraphicsIcon,
+    title: "Publication Design",
+    paragraph:
+      "We design clean, professional layouts for magazines, catalogs, and reports. Our publication design ensures readability, elegant presentation, and visual harmony that enhances your brand’s message.",
+  },
+  {
+    id: 2022,
+    icon: packagingIcon,
+    title: "Packaging Design",
+    paragraph:
+      "Our packaging designs blend creativity and practicality to enhance shelf appeal and brand value. We craft unique, eye-catching packaging that protects products and leaves a lasting impression.",
+  },
+  {
+    id: 2023,
+    icon: corporateIcon,
+    title: "Corporate Service Design",
+    paragraph:
+      "We design effective service systems that improve customer experience and business efficiency. Our solutions streamline processes, strengthen brand impact, and create meaningful user interactions.",
+  },
+  {
+    id: 3034,
+    icon: printingSvg,
+    title: "Printing Service",
     paragraph:
       "We provide high-quality printing solutions that bring your ideas to life with precision and vibrant detail. From business cards to large-format banners, our prints are designed to make a lasting impact.",
   },
   {
-    id: 404,
-    icon: (
-      <svg
-        height="800px"
-        width="800px"
-        version="1.1"
-        id="Layer_1"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-        viewBox="0 0 512 512"
-        xmlSpace="preserve"
-      >
-        <path
-          style={{ fill: "#F68B4D" }}
-          d="M209.185,17.778C209.185,7.96,201.435,0,192.001,0h-55.806c-9.436,0-17.084,7.96-17.084,17.778
-        v154.074c0,9.818,7.648,17.778,17.083,17.778H192c9.435,0,17.184-7.96,17.184-17.778V17.778H209.185z"
-        />
-        <path
-          style={{ fill: "#F66131" }}
-          d="M192,0h-55.806c-9.435,0-17.083,7.96-17.083,17.778v99.204h44.59v72.648H192
-        c9.435,0,17.185-7.96,17.185-17.778V17.778C209.185,7.96,201.435,0,192,0z"
-        />
-        <path
-          style={{ fill: "#6A81B5" }}
-          d="M192.083,0.004h-55.87c-9.446,0-17.102,7.96-17.102,17.778v117.333h90.074V17.781
-        C209.185,7.963,201.528,0.004,192.083,0.004z"
-        />
-        <g>
-          <path
-            style={{ fill: "#263B74" }}
-            d="M192.083,0.004h-28.338v135.111h45.44V17.781C209.185,7.963,201.528,0.004,192.083,0.004z"
-          />
-          <path
-            style={{ fill: "#263B74" }}
-            d="M284.444,92.444H226.37c-9.818,0-17.778,7.96-17.778,17.778v117.333h93.63V110.222
-          C302.222,100.404,294.263,92.444,284.444,92.444z"
-          />
-        </g>
-        <path
-          style={{ fill: "#6A81B5" }}
-          d="M255.407,92.444H226.37c-9.818,0-17.778,7.96-17.778,17.778v117.333h46.815V92.444z"
-        />
-        <path
-          style={{ fill: "#C6C6C6" }}
-          d="M414.222,171.852c0-9.818-7.96-17.778-17.778-17.778H115.556c-9.818,0-17.778,7.96-17.778,17.778
-        v322.37c0,9.818,7.96,17.778,17.778,17.778h280.889c9.818,0,17.778-7.96,17.778-17.778V171.852z"
-        />
-        <path
-          style={{ fill: "#E2E2E2" }}
-          d="M255.407,154.074H115.556c-9.818,0-17.778,7.96-17.778,17.778v322.37
-        c0,9.818,7.96,17.778,17.778,17.778h139.852V154.074z"
-        />
-        <path
-          style={{ fill: "#CB0E24" }}
-          d="M198.268,429.231l-13.837,12.768c-4.539,4.188-11.535,4.188-16.075,0l-13.837-12.768
-        c-2.432-2.244-3.815-5.402-3.815-8.71v-95.781c0-6.546,5.306-11.852,11.852-11.852h27.673c6.546,0,11.852,5.306,11.852,11.852
-        v95.781C202.084,423.831,200.7,426.988,198.268,429.231z"
-        />
-        <path
-          style={{ fill: "#F49B40" }}
-          d="M277.281,429.231l-13.837,12.768c-4.539,4.188-11.535,4.188-16.075,0l-13.837-12.768
-        c-2.432-2.244-3.815-5.402-3.815-8.71v-95.781c0-6.546,5.306-11.852,11.852-11.852h27.673c6.546,0,11.852,5.306,11.852,11.852
-        v95.781C281.096,423.831,279.713,426.988,277.281,429.231z"
-        />
-        <path
-          style={{ fill: "#FFCC73" }}
-          d="M255.407,445.141c-2.884,0-5.767-1.048-8.037-3.142l-13.837-12.768
-        c-2.432-2.244-3.815-5.402-3.815-8.71v-95.781c0-6.546,5.306-11.852,11.852-11.852h13.837V445.141z"
-        />
-        <path
-          style={{ fill: "#51D2E1" }}
-          d="M356.294,429.231l-13.836,12.768c-4.539,4.188-11.535,4.188-16.075,0l-13.837-12.768
-        c-2.432-2.244-3.815-5.402-3.815-8.71v-95.781c0-6.546,5.306-11.852,11.852-11.852h27.673c6.546,0,11.852,5.306,11.852,11.852
-        v95.781C360.108,423.831,358.725,426.988,356.294,429.231z"
-        />
-      </svg>
+    id: 3035,
+    icon: printingSvg,
+    title: "Digital Printing",
+    paragraph:
+      "Digital printing delivers quick, affordable, and high-quality results for short runs or custom prints. Perfect for marketing materials, it provides vivid colors and sharp details every time.",
+  },
+  {
+    id: 3036,
+    icon: printingSvg,
+    title: "Offset Printing",
+    paragraph:
+      "Ideal for bulk printing, our offset printing service ensures exceptional quality, consistency, and color accuracy. Perfect for magazines, brochures, and catalogs that demand professional finishes.",
+  },
+  {
+    id: 3037,
+    icon: threeDPrinting,
+    title: "3D Printing",
+    paragraph:
+      "We bring your digital ideas to life with high-precision 3D printing. Ideal for prototypes, models, and product design, our technology delivers accuracy, creativity, and speed for every project.",
+  },
 
-    ),
+  {
+    id: 30401,
+    icon: printingSvg,
+    title: "Flexographic Printing",
+    paragraph:
+      "Our flexographic printing service delivers high-speed, cost-efficient, and high-quality results for packaging, labels, and flexible materials. Using advanced plates and quick-drying inks, we ensure vibrant colors, sharp details, and durable print finishes.",
+  },
+
+  {
+    id: 4048,
+    icon: stationarySvgIcon,
     title: "Office Stationary",
     paragraph:
       "We offer a complete range of premium office stationery to keep your workplace organized and efficient. From essential supplies to customized branded items, our products are designed to meet your daily business needs.",
   },
   {
-    id: 505,
-    icon: (
-      <svg
-        height="200px"
-        width="200px"
-        version="1.1"
-        id="Layer_1"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-        viewBox="0 0 512 512"
-        xmlSpace="preserve"
-        fill="#000000"
-      >
-        <g id="SVGRepo_bgCarrier" strokeWidth={0} />
-        <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
-        <g id="SVGRepo_iconCarrier">
-          {" "}
-          <path
-            style={{ fill: "#B87FD9" }}
-            d="M428.616,204.436c-6.689-3.185-13.649-5.872-20.846-8.02c-6.757-2.019-13.721-3.559-20.846-4.582 c-6.811-0.977-13.767-1.497-20.846-1.497c-19.471,0-38.062,3.836-55.057,10.791c-2.614,1.07-5.192,2.214-7.728,3.43 c-8.878,4.253-17.262,9.378-25.04,15.263c-3.334,2.522-6.557,5.184-9.659,7.977c-1.034,0.931-2.055,1.876-3.063,2.836 c-6.044,5.758-11.596,12.028-16.586,18.739c-1.115,1.5-2.201,3.02-3.26,4.561c-2.117,3.084-4.119,6.251-5.998,9.497 c-0.939,1.623-1.85,3.267-2.727,4.929c-0.934,1.766-1.843,3.549-2.704,5.357c-2.247,4.717-4.23,9.578-5.966,14.553 c-0.724,2.079-1.419,4.173-2.053,6.293c-2.021,6.757-3.562,13.722-4.585,20.846c-0.978,6.811-1.495,13.771-1.495,20.846 c0,17.049,2.949,33.419,8.345,48.641c1.281,3.612,2.697,7.16,4.247,10.637c1.55,3.477,3.23,6.882,5.039,10.209 c3.998,7.352,8.614,14.323,13.769,20.846c26.747,33.837,68.14,55.589,114.521,55.589c80.46,0,145.922-65.46,145.922-145.922 C512,278.165,477.872,227.898,428.616,204.436z"
-          />{" "}
-          <path
-            style={{ fill: "#9CDD05" }}
-            d="M89.355,308.286c12.296-15.932,27.525-29.486,44.874-39.848c7.21-4.308,14.784-8.066,22.668-11.21 c7.741-3.088,15.779-5.584,24.056-7.438c-19.812-18.268-45.78-28.534-73.079-28.534C48.392,221.257,0,269.649,0,329.132 c0,11.513,9.333,20.846,20.846,20.846h45.308c2.693-7.209,5.888-14.171,9.549-20.846C79.716,321.817,84.287,314.85,89.355,308.286z"
-          />{" "}
-          <g>
-            {" "}
-            <path
-              style={{ fill: "#EFC27B" }}
-              d="M128.721,117.031c0-11.239,2.161-21.976,6.049-31.85c2.607-6.619,5.997-12.842,10.063-18.561 c-10.36-7.617-23.139-12.13-36.958-12.13c-34.485,0-62.538,28.056-62.538,62.539s28.053,62.536,62.538,62.536 c13.817,0,26.595-4.512,36.958-12.131c-4.066-5.716-7.457-11.941-10.064-18.56C130.882,139.002,128.721,128.265,128.721,117.031z"
-            />{" "}
-            <path
-              style={{ fill: "#EFC27B" }}
-              d="M144.833,66.619c-4.066,5.717-7.456,11.942-10.063,18.561c-3.888,9.874-6.049,20.611-6.049,31.85 c0,11.236,2.161,21.973,6.047,31.844c2.607,6.621,5.998,12.844,10.064,18.56c15.818,22.245,41.779,36.8,71.093,36.8 c48.086,0,87.206-39.119,87.206-87.204c0-48.087-39.12-87.207-87.206-87.207C186.613,29.824,160.653,44.375,144.833,66.619z"
-            />{" "}
-          </g>{" "}
-          <path
-            style={{ fill: "#5A2479" }}
-            d="M429.467,318.251c-1.226-3.772-4.489-6.523-8.416-7.095l-31.53-4.579l-14.097-28.571 c-1.755-3.556-5.378-5.812-9.346-5.812s-7.592,2.256-9.349,5.812l-14.096,28.57l-31.532,4.579c-3.925,0.571-7.189,3.324-8.413,7.095 c-1.23,3.776-0.203,7.915,2.638,10.684l22.815,22.24l-5.387,31.404c-0.67,3.909,0.938,7.863,4.144,10.196 c3.21,2.331,7.464,2.638,10.976,0.791l28.203-14.824l28.202,14.824c1.523,0.8,3.187,1.197,4.846,1.197c0.013,0,0.021,0,0.031,0 c5.756-0.001,10.422-4.667,10.422-10.423c0-0.874-0.108-1.723-0.311-2.535l-5.253-30.63l22.814-22.24 C429.671,326.165,430.693,322.025,429.467,318.251z"
-          />{" "}
-          <path
-            style={{ fill: "#933EC5" }}
-            d="M337.875,393.564c-3.512,1.847-7.767,1.538-10.976-0.791c-3.208-2.333-4.815-6.286-4.144-10.196 l5.387-31.404l-22.815-22.24c-2.841-2.768-3.866-6.908-2.636-10.684c1.224-3.772,4.487-6.523,8.413-7.095l31.532-4.579 l14.099-28.571c1.757-3.556,5.38-5.812,9.349-5.812v-81.856c-47.93,0-90.517,23.246-117.133,59.037 c-4.458,5.995-8.475,12.338-11.985,18.988c-0.934,1.766-1.843,3.549-2.704,5.357c-2.247,4.717-4.23,9.578-5.966,14.553 c-0.724,2.079-1.419,4.173-2.053,6.293c-2.021,6.757-3.56,13.722-4.585,20.846c-0.978,6.811-1.495,13.771-1.495,20.846 c0,17.049,2.949,33.419,8.345,48.641c2.563,7.224,5.667,14.193,9.286,20.846c3.998,7.352,8.614,14.323,13.769,20.846 c26.747,33.837,68.14,55.589,114.521,55.589v-103.44L337.875,393.564z"
-          />{" "}
-          <path
-            style={{ fill: "#A4E276" }}
-            d="M228.502,384.898c-5.396-15.222-8.345-31.591-8.345-48.641c0-7.075,0.517-14.035,1.495-20.846 c1.023-7.124,2.564-14.089,4.585-20.846c0.634-2.119,1.327-4.214,2.053-6.293c1.736-4.975,3.719-9.837,5.966-14.553 c0.862-1.809,1.771-3.591,2.704-5.357c3.51-6.65,7.527-12.993,11.985-18.988c-10.813-2.274-21.862-3.448-33.019-3.448 c-12.011,0-23.713,1.341-34.973,3.865c-8.277,1.854-16.315,4.35-24.056,7.438c-7.884,3.145-15.457,6.903-22.668,11.21 c-17.349,10.362-32.578,23.916-44.874,39.848c-5.067,6.565-9.639,13.53-13.653,20.846c-3.661,6.675-6.857,13.637-9.549,20.846 c-6.489,17.37-10.046,36.159-10.046,55.767c0,11.513,9.333,20.846,20.846,20.846h174.604c-5.156-6.523-9.771-13.494-13.769-20.846 C234.169,399.091,231.065,392.123,228.502,384.898z"
-          />{" "}
-          <path
-            style={{ fill: "#ECB45C" }}
-            d="M144.833,66.619c-4.066,5.717-7.456,11.942-10.063,18.56c-3.888,9.874-6.049,20.611-6.049,31.85 c0,11.236,2.161,21.973,6.048,31.844c2.607,6.621,5.998,12.844,10.064,18.56c15.818,22.245,41.778,36.799,71.093,36.799V29.821 C186.613,29.824,160.653,44.375,144.833,66.619z"
-          />{" "}
-          <path
-            style={{ fill: "#64C37D" }}
-            d="M156.898,257.228c-7.884,3.145-15.457,6.903-22.668,11.21 c-17.349,10.362-32.578,23.916-44.874,39.848c-5.067,6.565-9.639,13.53-13.653,20.846c-3.661,6.675-6.857,13.637-9.549,20.846 c-6.489,17.37-10.045,36.161-10.045,55.767c0,11.513,9.333,20.846,20.846,20.846h138.973V245.925 c-12.011,0-23.713,1.341-34.973,3.865C172.677,251.645,164.638,254.141,156.898,257.228z"
-          />{" "}
-          <path
-            style={{ fill: "#ECB45C" }}
-            d="M45.337,117.029c0,34.347,27.836,62.307,62.135,62.527V54.5 C73.173,54.718,45.337,82.679,45.337,117.029z"
-          />{" "}
-        </g>
-      </svg>
-
-    ),
-    title: "SEO Service",
-    paragraph:
-      "We provide data-driven SEO strategies that improve your website’s visibility and attract the right audience. Our approach focuses on delivering sustainable results through keyword optimization, content strategy, and technical enhancements.",
-  },
-  {
-    id: 606,
-    icon: (
-      <svg
-        viewBox="0 0 120 120"
-        id="Layer_1"
-        version="1.1"
-        xmlSpace="preserve"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-        fill="#000000"
-      >
-        <g id="SVGRepo_bgCarrier" strokeWidth={0} />
-        <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
-        <g id="SVGRepo_iconCarrier">
-          {" "}
-          <style
-            type="text/css"
-            dangerouslySetInnerHTML={{
-              __html:
-                " .st0{fill:#FFB562;} .st1{fill:#3F3F3F;} .st2{fill:#F87474;} .st3{fill:#3AB0FF;} .st4{fill:#FFFFFF;} "
-            }}
-          />{" "}
-          <g>
-            {" "}
-            <g>
-              {" "}
-              <ellipse
-                className="st0"
-                cx="18.6"
-                cy="64.9"
-                rx="6.6"
-                ry="6.6"
-                transform="matrix(0.7071 -0.7071 0.7071 0.7071 -40.471 32.1518)"
-              />{" "}
-              <ellipse
-                className="st0"
-                cx="101.4"
-                cy="64.9"
-                rx="6.6"
-                ry="6.6"
-                transform="matrix(0.9732 -0.2298 0.2298 0.9732 -12.2044 25.0397)"
-              />{" "}
-            </g>{" "}
-            <g>
-              {" "}
-              <path
-                className="st0"
-                d="M96.4,52.8h-5.6C90.8,35.8,77,22,60,22c-17,0-30.8,13.8-30.8,30.8h-5.6c0-20.1,16.3-36.4,36.4-36.4 S96.4,32.7,96.4,52.8z"
-              />{" "}
-            </g>{" "}
-            <g>
-              {" "}
-              <path
-                className="st1"
-                d="M69.3,101.4c-2.4,0-4-0.1-4.2-0.1l0.2-2.2c0.2,0,22.9,1.7,25.6-7.7c3-10.4,1.5-21.4,1.5-21.5l2.2-0.3 C94.7,70,96.2,81.1,93,92C90.5,100.3,76.5,101.4,69.3,101.4z"
-              />{" "}
-            </g>{" "}
-            <path
-              className="st2"
-              d="M70.3,103.6H60.2c-0.9,0-1.6-0.7-1.6-1.6v-4c0-0.9,0.7-1.6,1.6-1.6h10.1c0.9,0,1.6,0.7,1.6,1.6v4 C71.9,102.9,71.2,103.6,70.3,103.6z"
-            />{" "}
-            <path
-              className="st3"
-              d="M77.1,72.6H60l-12.4,7.4c-0.5,0.3-1.1-0.2-1-0.7l1.8-6.7h-5.5c-1.5,0-2.8-1.3-2.8-2.8V48.4 c0-1.5,1.3-2.8,2.8-2.8h34.1c1.5,0,2.8,1.3,2.8,2.8v21.5C79.9,71.4,78.6,72.6,77.1,72.6z"
-            />{" "}
-            <g>
-              {" "}
-              <path
-                className="st4"
-                d="M60,57c-1.2,0-2.1,1-2.1,2.1s1,2.1,2.1,2.1c1.2,0,2.1-1,2.1-2.1S61.2,57,60,57z"
-              />{" "}
-              <path
-                className="st4"
-                d="M51.4,57c-1.2,0-2.1,1-2.1,2.1s1,2.1,2.1,2.1c1.2,0,2.1-1,2.1-2.1S52.6,57,51.4,57z"
-              />{" "}
-              <path
-                className="st4"
-                d="M68.6,57c-1.2,0-2.1,1-2.1,2.1s1,2.1,2.1,2.1c1.2,0,2.1-1,2.1-2.1S69.8,57,68.6,57z"
-              />{" "}
-            </g>{" "}
-            <g>
-              {" "}
-              <path
-                className="st2"
-                d="M29.6,50.9h-8.8c-2.7,0-4.9,2.2-4.9,4.9v19.6c0,2.7,2.2,4.9,4.9,4.9h8.8c1.9,0,3.4-1.5,3.4-3.4V54.2 C32.9,52.4,31.4,50.9,29.6,50.9z"
-              />{" "}
-              <path
-                className="st2"
-                d="M99.2,50.9h-8.8c-1.9,0-3.4,1.5-3.4,3.4v22.6c0,1.9,1.5,3.4,3.4,3.4h8.8c2.7,0,4.9-2.2,4.9-4.9V55.7 C104.1,53,101.9,50.9,99.2,50.9z"
-              />{" "}
-            </g>{" "}
-          </g>{" "}
-        </g>
-      </svg>
-
-    ),
+    id: 6069,
+    icon: otherSevicesSvgIcon,
     title: "Other services whatever required",
     paragraph:
       "Our other services are tailored to provide flexible, on-demand solutions tailored to your specific needs. Whether enhancing your digital presence, improving workflow efficiency, or creating custom solutions, we will strive to meet your every need.",
