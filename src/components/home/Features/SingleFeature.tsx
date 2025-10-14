@@ -13,7 +13,7 @@ const SingleFeature = ({ feature }: { feature: SingleFeature }) => {
   return (
     <div className="w-full p-4">
       <div
-        className="wow fadeInUp shadow-2xl shadow-gray-700 border-2 border-solid border-gray-400 rounded-2xl p-4"
+        className="wow fadeInUp shadow-2xl shadow-gray-700 border border-solid border-sky-100 rounded-2xl p-4 sm:p-8 "
         data-wow-delay=".15s"
       >
         <div className="w-full mb-6 flex items-center justify-space-between">
