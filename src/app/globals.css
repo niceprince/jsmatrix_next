@@ -41,3 +41,10 @@ body {
 .section-box h2::before {
   content: counter(section-counter) ". ";
 }
+
+.social-media .fill-current {
+  fill: #c30e41ff;
+}
+.social-media .fill-current:hover {
+  fill: #4f39f6;
+}
