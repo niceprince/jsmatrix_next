@@ -24,13 +24,13 @@ const SectionTitle = ({
         style={{ maxWidth: width }}
       >
         {title && (
-          <h1
-            className={`mb-4 text-2xl font-bold !leading-tight text-black dark:text-white sm:text-3xl md:text-3xl ${
+          <h2
+            className={`mb-4 text-2xl font-bold !leading-tight text-black dark:text-white sm:text-3xl md:text-4xl ${
               props.txtColor && props.txtColor
             }`}
           >
             {title}
-          </h1>
+          </h2>
         )}
         <p
           className={`text-base !leading-relaxed text-body-color md:text-lg ${

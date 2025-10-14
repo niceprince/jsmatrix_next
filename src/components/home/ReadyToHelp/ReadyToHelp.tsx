@@ -5,7 +5,7 @@ const paraText = `Our team is committed to delivering exceptional solutions tail
 
 const ReadyToHelp = () => {
   return (
-    <section className="relative z-10 py-16 md:py-20 lg:py-28 bg-[#b5fffb]">
+    <section className="relative z-10 py-16 md:py-20 lg:py-28 bg-[#b5fffb] dark:bg-[#607d8b]">
       <div className="container mx-auto">
         <SectionTitle
           title="We are ready to help"
