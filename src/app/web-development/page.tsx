@@ -13,6 +13,15 @@ const WebDevelopment = () => {
 
       <PageHeadContents title="Web Development" />
       <WebDevelopmentItems />
+      {/* <div className="container mx-auto py-8 sm:py-16 md:py-16 text-center">
+        <a
+          href="/contact"
+          target="_blank"
+          className="inline-block bg-yellow-400 text-gray-900 font-semibold px-8 py-4 rounded-full shadow-lg hover:bg-yellow-300 transition"
+        >
+          🚀 Make a call now...
+        </a>
+      </div> */}
     </>
   );
 };
