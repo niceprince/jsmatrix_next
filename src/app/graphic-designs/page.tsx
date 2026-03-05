@@ -21,14 +21,15 @@ const GraphicDesigns = () => (
       keywords="graphic design, branding design, logo design, business cards, brochures, visual identity, digital graphics, creative designs, marketing materials, poster design, flyer design, corporate branding, visual content, design services, custom illustrations"
       description="Bring your brand to life with JSMatrix's professional graphic design services. We create stunning visuals, logos, brochures, and marketing materials that effectively communicate your brand's identity and make your business stand out online and offline."
     />
-    <section className="pt-18 pt-[4rem] md:pt-[70px]">
+    <section className="pt-18 md:pt-[70px]">
       <DevHeading
         headingBgText={languages}
         headText={headText}
         paraText={paraText}
       />
-      <PagesWavesSection {...graphicsSubHeading} />
+
       <ItemWithGrids {...GraphicsPageItems} />
+      <PagesWavesSection {...graphicsSubHeading} />
       <ElegantItemsDisplay
         elegantCategories={graphicDesignCategories}
         sectionDescription="Explore a complete range of graphic design solutions — from brand identity and marketing materials to web design, packaging, and motion graphics."

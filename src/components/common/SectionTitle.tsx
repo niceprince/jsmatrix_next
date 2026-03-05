@@ -19,7 +19,7 @@ const SectionTitle = ({
       <div
         className={`wow fadeInUp w-full ${
           center ? "mx-auto text-center" : ""
-        } pb-16 md:pb-20 lg:pb-28`}
+        } pb-8 md:pb-8 lg:pb-8`}
         data-wow-delay=".1s"
         style={{ maxWidth: width }}
       >

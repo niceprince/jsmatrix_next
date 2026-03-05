@@ -38,7 +38,7 @@ const Web = () => {
         keywords={keywords}
         description={description}
       />
-      <section className="pt-18 pt-[4rem] md:pt-[70px]">
+      <section className="pt-18 md:pt-[70px]">
         <DevHeading
           headingBgText={languages}
           headText={headText}
@@ -46,13 +46,12 @@ const Web = () => {
           bgImage="/images/programming-background-collage.jpg'"
         />
       </section>
-
-      <SeparateLandingSection {...webLandingSection} />
       <ColumnTypeSection {...ExpertiseFieldsData} />
       <ElegantItemsDisplay
         elegantCategories={webDevelopmentCategories}
         sectionDescription="Transform your digital presence with our full spectrum of web development services, including frontend, backend, e-commerce, CMS, and cloud deployment."
       />
+      <SeparateLandingSection {...webLandingSection} />
     </>
   );
 };

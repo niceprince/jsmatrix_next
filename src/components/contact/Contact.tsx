@@ -88,7 +88,7 @@ const ContactUs = () => {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -109,7 +109,7 @@ const ContactUs = () => {
               "Content-Type": "application/json",
             },
             body: JSON.stringify(formData), // sending data
-          }
+          },
         );
 
         const data = await response.json();
@@ -148,8 +148,9 @@ const ContactUs = () => {
         </h2>
         <p className="mb-6 text-base font-medium text-gray-700 dark:text-gray-300">
           For immediate assistance, <br />
-          Please call +91 8368115720, or <br />
-          Email at info@jsmatrix.in <br />
+          Please call <strong>+91 8368115720</strong>, or <br />
+          Email at <strong>info@jsmatrix.in</strong>,{" "}
+          <strong>jsmatrix.info@gmail.com</strong> <br />
           Or fill the form...
           <br />
           Our team will get back to you ASAP via email or call.

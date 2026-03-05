@@ -25,9 +25,10 @@ function PagesWavesSection({
   useEffect(() => {
     if (sectionRef.current?.offsetTop)
       setSecScroll(
-        sectionRef.current?.offsetTop + sectionRef.current?.offsetTop
+        sectionRef.current?.offsetTop +
+          (sectionRef.current?.scrollHeight - 140),
       );
-  }, []);
+  }, [secScroll]);
 
   return (
     <section
