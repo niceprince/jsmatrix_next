@@ -26,6 +26,7 @@ const GraphicDesigns = () => (
         headingBgText={languages}
         headText={headText}
         paraText={paraText}
+        pageName="graphics"
       />
 
       <ItemWithGrids {...GraphicsPageItems} />

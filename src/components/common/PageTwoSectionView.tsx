@@ -1,4 +1,5 @@
 import React, { ReactElement } from "react";
+import PageHeading from "./PageHeading";
 
 type TwoPageSectionProps = {
   pageHeading?: string;
@@ -17,15 +18,7 @@ const PageTwoSectionView: React.FC<TwoPageSectionProps> = ({
 
   return (
     <section className="pt-16 md:pt-20 lg:pt-18">
-      {pageHeading && (
-        <div className="bg-teal-700 drop-shadow">
-          <div className="container mx-auto py-8">
-            <h1 className="text-2xl sm:text-3xl md:text-3xl font-bold text-white ">
-              {pageHeading}
-            </h1>
-          </div>
-        </div>
-      )}
+      {pageHeading && <PageHeading title={pageHeading} />}
       <div className="container mx-auto">
         <div className="border-body-color/[.15] pb-6 dark:border-white/[.15] md:pb-8 lg:pb-14">
           <div className="flex flex-wrap">

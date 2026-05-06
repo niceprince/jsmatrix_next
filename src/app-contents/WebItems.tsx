@@ -1,4 +1,8 @@
 import { ElegantCategory } from "@/components/common/ElegantItemDisplay";
+import { PortfolioItem } from "@/utils/types";
+
+export const keywords: string =
+  "Web Development, Web Maintanance, Web Design, Web Designing, Graphic Design, Graphic Designing, Prints, Printing, Designing, JS Matrix, web development, seo services, digital marketing, graphic design, printing services, office stationery, web solutions, website maintenance, brand promotion, creative agency, online business growth, website optimization, professional web services, js matrix";
 
 export const ExpertiseFieldsData = {
   title: "Our Core Expertise 🚀",
@@ -378,3 +382,60 @@ export const webDevelopmentCategories: ElegantCategory[] = [
     ],
   },
 ];
+
+// Web Portfolio Data
+
+export const portfolioData: Record<string, PortfolioItem[]> = {
+  web: [
+    {
+      title: "Toji",
+      desc: "Be the better business. We can help.",
+      img: "/images/web/toji.jpg",
+      link: "https://toji.co.in",
+    },
+    {
+      title: "Ripples of Hope",
+      desc: "It is as much a human rights issue as it is a social problem.",
+      img: "/images/web/ripplesofhope.jpg",
+      link: "https://ripplesofhope.in/",
+    },
+    {
+      title: "Swastik Manpower",
+      desc: "We have team of experts specialized in security services.",
+      img: "/images/web/swastikmanpower.jpg",
+      link: "https://www.swastikmanpower.com/",
+    },
+    {
+      title: "Anath Narayan Sewa Gurukulam Trust",
+      desc: "All about spirituality and social work.",
+      img: "/images/web/gurukulam.jpg",
+      link: "https://www.anathnarayansewagurukulamtrust.com/",
+    },
+    {
+      title: "Eng Notes",
+      desc: "Your go-to destination for all engineering notes.",
+      img: "/images/web/engnotes.jpg",
+      link: "https://www.engnotes.dev/",
+    },
+    {
+      title: "GALAXY Public School",
+      desc: "A Private School in Deoria, Gorakhpur, Uttar Pradesh.",
+      img: "/images/web/galaxypublicschool.jpg",
+      link: "http://www.galaxypublicschooldeoria.in/",
+    },
+  ],
+  graphic: [
+    {
+      title: "Created Trade Health Brochure",
+      desc: "About My Trade Health how it works and its benefits.",
+      img: "/images/graphic/mytradehealth.jpg",
+    },
+  ],
+  printing: [
+    {
+      title: "Printed My Trade Health Brochure",
+      desc: "About My Trade Health how it works and its benefits.",
+      img: "/images/printing/mth-print.jpg",
+    },
+  ],
+};

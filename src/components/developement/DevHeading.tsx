@@ -9,12 +9,14 @@ type DevHeadProps = {
   headText: string;
   paraText: string;
   bgImage?: string;
+  pageName?: string;
 };
 const DevHeading: React.FC<DevHeadProps> = ({
   headingBgText,
   headText,
   paraText,
   bgImage,
+  pageName,
 }) => {
   const particleContainer = useRef<HTMLDivElement | null>(null);
 
@@ -125,7 +127,9 @@ const DevHeading: React.FC<DevHeadProps> = ({
         className={styles.gradientBackground}
         style={{ backgroundImage: bgImage }}
       >
-        <div className={`${styles.gradientSphere} ${styles.sphere1}`}></div>
+        <div
+          className={`${styles.gradientSphere} ${styles.sphere1} ${pageName}`}
+        ></div>
         <div className={`${styles.gradientSphere} ${styles.sphere2}`}></div>
         <div className={`${styles.gradientSphere} ${styles.sphere3}`}></div>
         <div className={styles.glow}></div>

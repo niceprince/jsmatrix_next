@@ -5,6 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import MenuData from "./MenuDatas";
+import SubMenu from "./SubMenu";
 
 export default function Header() {
   // Navbar toggle
@@ -127,11 +128,11 @@ export default function Header() {
                               <Link
                                 href={menuItem.topPath || "javascript:void(0)"}
                                 className={`dark:text-gray-700 lg:dark:text-white/70 ${
-                                  usePathName === menuItem.topPath ||
-                                  menuItem.submenu?.some(
-                                    (item) => item.path === usePathName
-                                  )
-                                    ? "text-primary text-red-700 dark:text-red-700 lg:dark:text-white"
+                                  usePathName === menuItem.topPath //||
+                                    ? // menuItem.submenu?.some(
+                                      //   (item) => item.web.path === usePathName
+                                      // )
+                                      "text-primary text-red-700 dark:text-red-700 lg:dark:text-white"
                                     : "text-dark hover:text-primary dark:text-gray-700 lg:dark:text-white/70 dark:hover:text-red-700 lg:dark:hover:text-white"
                                 }`}
                               >
@@ -154,14 +155,8 @@ export default function Header() {
                               }`}
                             >
                               {menuItem.submenu &&
-                                menuItem.submenu.map((submenuItem, index) => (
-                                  <Link
-                                    href={submenuItem.path}
-                                    key={index}
-                                    className="block rounded py-2.5 text-sm text-dark hover:text-primary dark:text-black dark:hover:text-blue-800 lg:px-3"
-                                  >
-                                    {submenuItem.title}
-                                  </Link>
+                                menuItem.submenu.map((item, index) => (
+                                  <SubMenu key={index} item={item} />
                                 ))}
                             </div>
                           </>
@@ -170,12 +165,12 @@ export default function Header() {
                     ))}
                     <li className="flex items-center justify-end">
                       <div className="block w-full lg:flex justify-end">
-                        <Link
+                        {/* <Link
                           href="/about"
                           className="inline-flex mr-4 items-center rounded-md bg-indigo-500 px-4 py-2 text-sm leading-6 font-semibold text-white transition duration-150 ease-in-out hover:bg-indigo-400"
                         >
                           About us
-                        </Link>
+                        </Link> */}
                         <Link
                           href="/contact"
                           className="inline-flex items-center rounded-md bg-indigo-500 px-4 py-2 text-sm leading-6 font-semibold text-white transition duration-150 ease-in-out hover:bg-indigo-400"
